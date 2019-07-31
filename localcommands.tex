@@ -1,0 +1,172 @@
+\newcommand{\appref}[1]{Appendix \ref{#1}}
+\newcommand{\fnref}[1]{Footnote \ref{#1}} 
+
+\newenvironment{langscibars}{\begin{axis}[ybar,xtick=data, xticklabels from table={\mydata}{pos}, 
+        width  = \textwidth,
+	height = .3\textheight,
+    	nodes near coords, 
+	xtick=data,
+	x tick label style={},  
+	ymin=0,
+	cycle list name=langscicolors
+        ]}{\end{axis}}
+        
+\newcommand{\langscibar}[1]{\addplot+ table [x=i, y=#1] {\mydata};\addlegendentry{#1};}
+
+\newcommand{\langscidata}[1]{\pgfplotstableread{#1}\mydata;}
+
+
+%INTRO
+\newcommand{\agr}{\textsc{Agree}}
+\newcommand{\agrl}{\textsc{Agree-Link}}
+\newcommand{\agrc}{\textsc{Agree-Copy}}
+
+%CARSTENS LOCAL COMMANDS, D'Alessandro has the same
+
+\newcommand{\smiley}{:)}
+
+
+\renewbibmacro*{index:name}[5]{%
+	\usebibmacro{index:entry}{#1}
+	{\iffieldundef{usera}{}{\thefield{usera}\actualoperator}\mkbibindexname{#2}{#3}{#4}{#5}}}
+
+
+% \newcommand{\noop}[1]{}
+
+%\newcommand{\ul}{\underline{\hspace{12pt}}}
+
+\newcommand{\sub}[1]{\ensuremath{_{\textnormal{\scriptsize #1}}}} %subscript
+
+\newcommand{\trace}[1]{\ensuremath{\langle}#1\ensuremath{\rangle}} %trace with angled brackets
+
+\newcommand{\sqboxEmpty}[1]{	% square boxes for the agreement
+	\begin{tikzpicture}%[baseline={(a.base)}]
+	\draw[line width=0.6pt,#1] (0.5\pgflinewidth,0.5\pgflinewidth) rectangle (1.2ex-0.5\pgflinewidth,1.2ex-0.5\pgflinewidth);
+	\end{tikzpicture}%
+}
+
+
+%Boerjesson-Mueller
+
+\newcommand{\excite}[2]{\citeauthor{#2} (\citeyear{#2}, #1)}
+\newcommand{\scite}[2]{\citeauthor{#2}#1 (\citeyear{#2})}
+
+%JM 10.01.: Die folgenden Befehle sollten eigentlich Werke von Stefan Müller als Müller, St. im Text zitieren. Gereon meinte, dass ist so Konvention bei den beiden. Leider scheint es nicht zu funktionieren und Werke von Gereon Müller und Stefan Müller werden beide nur als Müller zitiert. Das müssen wir auf jeden Fall noch klären.
+
+\defcitealias{Stmueller2005}{M{\"u}ller,~St. (2005)}
+\defcitealias{SMueller:07:pas}{M{\"u}ller,~St. (2007)}
+\defcitealias{SMueller:15}{M{\"u}ller,~St. (2015)}
+\defcitealias{SMueller:02}{M{\"u}ller,~St. (2002)}
+
+\newlength{\strichlaenge}
+\newcommand{\strich}[1]{\settowidth{\strichlaenge}{#1}%
+	#1%
+	\llap{\rule[.8ex]{\strichlaenge}{.7pt}}}
+
+\newcommand{\Next}[1][]{\ref{\refprefix\the\numexpr\value{xnumi}+1}#1}
+\newcommand{\NNext}[1][]{\ref{\refprefix\the\numexpr\value{xnumi}+2}#1}
+\newcommand{\Last}[1][]{\ref{\refprefix\the\numexpr\value{xnumi}}#1}
+\newcommand{\LLast}[1][]{\ref{\refprefix\the\numexpr\value{xnumi}-1}#1}
+
+%KALIN
+
+\renewcommand{\lsID}{165}
+
+%DIERCKS ET AL
+
+\newcommand{\circled}[1]{\begin{tikzpicture}[baseline=(word.base)]
+	\node[draw, rounded corners, text height=8pt, text depth=2pt, inner sep=2pt, outer sep=0pt, use as bounding box] (word) {#1};
+	\end{tikzpicture}
+}
+
+%SMITH
+
+\definecolor{bgblue}{HTML}{AECDF0}
+\definecolor{hlblue}{HTML}{0C6FAB}
+\definecolor{bgbluet}{HTML}{455260}
+\definecolor{ngrey}{HTML}{949292}
+\definecolor{linkgr}{HTML}{0b5496}
+\newcommand{\eng}{\textipa{N}}
+\newcommand{\ra}{$\rightarrow$}
+\newcommand{\gy}{\cellcolor[gray]{0.8}}
+\newcommand{\wa}{\textipa{@}}
+\newcommand{\sch}{\textipa{@}}
+
+\newcommand{\object}{\textsc{Object}}
+\newcommand{\robj}{\textsc{Object$_{\textrm{$\theta$}}$}}
+\newcommand{\subj}{\textsc{Subject}}
+\newcommand{\gr}{\cellcolor{ngrey}}
+\newcommand{\theme}{\textsc{Theme}}
+\newcommand{\patient}{\textsc{Patient}}
+\newcommand{\goal}{\textsc{Goal}}
+\newcommand{\causee}{\textsc{Causee}}
+\newcommand{\agree}{\textsc{Agree}}
+
+%McFADDEN
+
+\newcommand{\D}{\textrtaild}
+% % % \newcommand{\T}{\textrtailt}
+\newcommand{\Z}{\textturnrrtail}
+\newcommand{\Y}{\textrtaill}
+\newcommand{\J}{\textdyoghlig}
+\newcommand{\E}{\ae}
+\newcommand{\AI}{\ae}
+\newcommand{\A}{\ae}
+\renewcommand{\L}{\textrtaill}
+\renewcommand{\U}{\u{u}}
+\newcommand{\eS}{\textesh}
+\newcommand{\alloc}{\textsc{alloc}{}\xspace}
+\newcommand{\allagr}{AllAgr}
+\newcommand{\nga}{\ng g\A}
+
+%SUNDARESAN
+
+% IPA Commands
+\renewcommand{\U}{\u{u}}
+%\newcommand{\U}{\textbari}
+\newcommand{\V}{a}
+\newcommand{\R}{r}
+
+
+\newcommand{\ph}{$\phi$}
+
+% Other commands: 
+\newcommand{\ul}{\underline}
+\newcommand{\ec}{\textsc{ec}}
+\newcommand{\pro}{\textsc{pro}}
+\newcommand{\itpro}{\textit{pro}}
+\newcommand{\person}{\textsc{person}}
+\newcommand{\num}{\textsc{number}}
+\newcommand{\gender}{\textsc{gender}}
+\renewcommand{\part}{\textsc{participant}}
+\newcommand{\nul}{\textsc{null}}
+\newcommand{\anaph}{\textsc{anaph}}
+\newcommand{\anaphor}{{\sc anaphor}}
+\newcommand{\lilv}{{\it v}}
+\newcommand{\lilvp}{{\it v}P}
+\newcommand{\kol}{{\it kol}}
+\newcommand{\taan}{{\it ta(a)n}}
+\newcommand{\self}{\textsc{self}}
+\newcommand{\subscr}{{\{i,*j\}}}
+\newcommand{\var}{\textsc{var}}
+\renewcommand{\op}{\textsc{op}}
+\newcommand{\dep}{\textsc{dep}}
+\newcommand{\refl}{\textsc{refl}}
+\newcommand{\id}{\textsc{id}}
+\newcommand{\empathy}{\textsc{empathy}}
+\newcommand{\anim}{\textsc{anim}}
+\newcommand{\sentience}{\textsc{sentience}}
+
+
+%Table commands
+\renewcommand{\top}{\lsptoprule}
+\newcommand{\bottom}{\lspbottomrule}
+\renewcommand{\mid}{\midrule}
+
+
+% denotation brackets:
+\newcommand{\den}[1]{\ensuremath{\llbracket #1 \rrbracket}}
+
+
+\newenvironment{points}{%
+	\begin{dinglist}{43}}{\end{dinglist}}
