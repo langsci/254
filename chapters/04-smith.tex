@@ -210,7 +210,7 @@ I this reindeer-\textsc{dl} kill-\textsc{past-DlO-1sgS}\\
 \caption{\label{tab:objconj}The Objective Conjugation in Khanty \parencite{ostyakgrammar}}
 \begin{tabular}{l  l  l l l}
 \lsptoprule
-\multicolumn{2}{c}{Subject}	&	\multicolumn{3}{c}{Object Number}\\	
+\multicolumn{2}{c}{Subject}	&	\multicolumn{3}{c}{Object Number}\\\cmidrule(lr){1-2}\cmidrule(lr){3-5}
 Number		&	Person		&	\textsc{Singular}				&	\textsc{Dual}							&	\textsc{Plural}\\
 \midrule
 \textsc{Singular}	&	1		&	we:r-l-{\bf e:m}					&	we:r-l-ə-{\bf ŋil}-am			&	we:r-l-ə-{\bf l}-am\\
@@ -344,7 +344,7 @@ As can be seen, with respect to the phenomena of verbal agreement, control in pa
 
 \begin{table}\centering
 	\caption{\label{tab:gfproperties}Properties of subjects and objects in Khanty}
-	\begin{tabularx}{\textwidth}{l c c c}
+	\begin{tabular}{l c c c}
 		\lsptoprule
 		&	Subjects		&	Object 1				&	Object 2\\	
 		\midrule
@@ -357,7 +357,7 @@ As can be seen, with respect to the phenomena of verbal agreement, control in pa
 		Control of Possessive Reflexivisation	& \ding{51}		&	 \ding{51}			&	\ding{55}\\
 		Possessor Topicalisation			&	 \ding{51}		&	 \ding{51}			&	\ding{55}\\
 		\lspbottomrule
-	\end{tabularx}
+	\end{tabular}
 \end{table}
 
 \noindent For instance, both subjects (\ref{ex:n199926}) and agreeing objects (\ref{ex:n199927}) can enter into the possessor topicalisation construction (where the possessor is split from the possessum), whilst non-agreeing objects cannot (\ref{ex:n199928}):
@@ -404,7 +404,7 @@ Table \ref{tab:dntabsummary} summarises.
 
 \begin{table}
 	\caption{\label{tab:dntabsummary}Summary of how functions are assigned}
-	\begin{tabularx}{\textwidth}{XXX}
+	\begin{tabular}{lll}
 		\lsptoprule
 		Function			&	Thematic Role	&	Information Structure\\
 		\midrule
@@ -416,7 +416,7 @@ Table \ref{tab:dntabsummary} summarises.
 		\multirow{2}{*}{\robj}	&	Theme		&	$-$Topic\\
 		&	Patient		&	$-$Topic\\
 		\lspbottomrule
-	\end{tabularx}
+	\end{tabular}
 \end{table}
 
 \newpage\noindent To make this clearer, we will consider a couple of examples. Firstly, consider a monotransitive sentence where there is no object agreement. 
@@ -437,7 +437,7 @@ I this reindeer kill-\textsc{past-1sgS}\\
 
 \ex \label{fs:killnontop}
 \begin{avm}
-\[ pred 	&	`kill'$<$subj,obj$_{\theta}$$>$\\
+\[ pred 	&	`kill'$\langle$subj,obj$_{\theta}$$\rangle$\\
 subj 		&	\[ pred	&	`pro'\\
 			pers		&	1\\
 			num		&	sg\]\\
@@ -460,7 +460,7 @@ I this reindeer kill-\textsc{past-1sgS.sgO}\\
 
 \ex
 \begin{avm}
-\[ pred 	&	`kill'$<$subj,obj$>$\\
+\[ pred 	&	`kill'$\langle$subj,obj$\rangle$\\
 subj 		&	\[ pred	&	`pro'\\
 			pers		&	1\\
 			num		&	sg\]\\
@@ -484,7 +484,7 @@ I Peter cup-\textsc{loc} give-\textsc{past-1sgS.sgO}/give-\textsc{past-1sgS}\\
 
 \ex
 \begin{avm}
-\[ pred 	&	`give'$<$subj,obj,obl$>$\\
+\[ pred 	&	`give'$\langle$subj,obj,obl$\rangle$\\
 subj 		&	\[ pred	&	`pro'\\
 			pers		&	1\\
 			num		&	sg\]\\
@@ -568,12 +568,12 @@ Crucial here is that dependent case in Sakha cannot be assessed across a Spell-o
 \ex Adapted from \citet[][126]{Baker2015}\\
 \begin{tikzpicture}[baseline,scale=1]
   \Tree [.TP [.NP$_{\textrm{i}}$ Masha ] [.T$'$ T [.vP [.NP t$_{\textrm{i}}$ ] [.vP [.NP porridge-\textsc{acc} ] [.v$'$ v [.\node(4){VP}; [.AdvP quickly ] [.VP ate [.NP porridge ] ] ] ] ] ] ] ]
-  \draw[dashed] ([shift=(1.1cm:2.4cm)]4)  arc (90:180:4cm) node[near start, above]  {SOD}; 
+  \draw[dashed,overlay] ([shift=(1.1cm:2.4cm)]4)  arc (90:180:4cm) node[near start, above]  {SOD}; 
 
 \end{tikzpicture}
-\end{exe} \vspace{-0.9cm}
+\end{exe}
 \end{figure}
-\newpage\noindent Yet, high movement of objects to receive dependent case cannot be the universal pattern, since there are languages that license a dependent case on all objects, irrespective of specificity, for instance in Cuzco Quechua:
+\noindent Yet, high movement of objects to receive dependent case cannot be the universal pattern, since there are languages that license a dependent case on all objects, irrespective of specificity, for instance in Cuzco Quechua:
 
 \begin{exe}
 \ex Cuzco Quechua, \citet[][146]{Baker2015}\\
@@ -662,12 +662,12 @@ In the tree below, and what follows, a solid arrow indicates an \agree{} relatio
 	\begin{tikzpicture}[sibling distance=10pt, baseline,scale=0.9]
 	% \Tree [.AgrSP Subj [.AgrS' AgrS
 	\Tree[.FP \phantom{Text} [.F$'$ \node(p){F}; [.TP \phantom{Text} [.T$'$ T [.vP \node(g){\textsc{Theme}$_{\textrm{[+Top]}}$}; [.v$'$ v [.VP \phantom{Text} [.\node(4){V$'$};  V  \node(t){\textsc{Theme}};  ] ] ] ] ] ] ] ]
-	\draw[dashed] ([shift=(1.1cm:3.4cm)]4)  arc (90:180:4cm) node[near start, above]  {SOD} node(bl)[very near end] {\ding{55}}; 
+	\draw[dashed,overlay] ([shift=(1.1cm:3.4cm)]4)  arc (90:180:4cm) node[near start, above]  {SOD} node(bl)[very near end] {\ding{55}}; 
 	\draw[->] (p.south) |- (g.west);
 	\draw (p.south) |- (bl);
 	\draw[dashed,->] (bl) -| (t);
 	\end{tikzpicture}
-\end{exe} \vspace{-0.2cm}
+\end{exe}
 
 \noindent This difference in the positioning of \theme s that are interpreted as topics or not is supported by the behaviour of the two regarding floating quantifiers. Nikolaeva argues herself that agreeing objects are VP external and that they do not form a syntactic constituent with the verb based on a variety of tests (see \citealt{nikolaeva1999}, and especially \citealt[][67-69]{ostyakgrammar}). She further shows that quantifier float is possible with objects that show agreement. 
 In (\ref{ex:n199924b}), the quantifier \emph{\v{a}sa} `all' can appear either to the left of the object, or to its right. In contrast, when object agreement is absent in (\ref{ex:n199925}), the only possible place for the quantifier is to the left of the argument.
@@ -829,11 +829,11 @@ However, note that if PRO is part of an object that has remained low, then it wi
 \begin{tikzpicture}[baseline,scale=0.8]
 \Tree [.TopP \node(1){Possessor}; [.Top$'$ Top [.AgrSP Subj [.AgrSP$'$ AgrS  [.vP [.PossP \node(2){PRO}; [.Poss$'$ Poss \qroof{...}.NP ] ] [.v$'$ v [.VP \phantom{Text} [.\node(4){V$'$}; V [.PossP \node(7){PRO}; [.Poss$'$ Poss \qroof{...}.NP ] ] ] ] ] ] ] ] ] ]
 \draw[->] (1) |- (2.west);
-\draw[dashed] ([shift=(1.1cm:4.2cm)]4)  arc (90:180:5.35cm) node[near start, above]  {SOD}  node(bl)[very near end] {\ding{55}};
+\draw[dashed,overlay] ([shift=(1.1cm:4.2cm)]4)  arc (90:180:5.35cm) node[near start, above]  {SOD}  node(bl)[very near end] {\ding{55}};
 \draw[->] (1) |- (bl.west);
 \draw[->,dashed] (bl.east) to (7.west);
 \end{tikzpicture}
-\end{exe} \vspace{-0.9cm}
+\end{exe}
 \end{figure}
 
 
@@ -847,11 +847,11 @@ Thus, we have seen that the current approach can also handle the divergence in b
 \begin{exe}
 	\ex
 	\begin{tabbing}
-		*Ma\v{s}a jernas-əl\hspace{10mm} \= \emph{intended}: `Masha's dress.'\kill
-				a.	n\v{a}ŋ jernas-en			\> 	`your dress-\textsc{2sg}'\\
-		b.	l\v{u}w jernas-əl 	\>	`his/her dress-\textsc{3sg}'\\
-		c.	Ma\v{s}a jernas			\>	 `Masha's dress'\\
-		d. 	*Ma\v{s}a jernas-əl	\>	 \emph{intended}: `Masha's dress.'\\
+		a. \= *Ma\v{s}a jernas-əl\hspace{10mm} \= \emph{intended}: `Masha's dress.'\kill
+        a. \> n\v{a}ŋ jernas-en			\> 	`your dress-\textsc{2sg}'\\
+		b. \> l\v{u}w jernas-əl 	\>	`his/her dress-\textsc{3sg}'\\
+		c. \> Ma\v{s}a jernas			\>	 `Masha's dress'\\
+		d. \> *Ma\v{s}a jernas-əl	\>	 \emph{intended}: `Masha's dress.'\\
 	\end{tabbing} 
 \end{exe}
 
