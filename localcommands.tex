@@ -1,19 +1,7 @@
 \newcommand{\appref}[1]{Appendix \ref{#1}}
 \newcommand{\fnref}[1]{Footnote \ref{#1}} 
-
-\newenvironment{langscibars}{\begin{axis}[ybar,xtick=data, xticklabels from table={\mydata}{pos}, 
-        width  = \textwidth,
-	height = .3\textheight,
-    	nodes near coords, 
-	xtick=data,
-	x tick label style={},  
-	ymin=0,
-	cycle list name=langscicolors
-        ]}{\end{axis}}
-        
-\newcommand{\langscibar}[1]{\addplot+ table [x=i, y=#1] {\mydata};\addlegendentry{#1};}
-
-\newcommand{\langscidata}[1]{\pgfplotstableread{#1}\mydata;}
+\renewcommand{\sectref}[1]{Section~\ref{#1}}
+\renewcommand{\lsChapterFooterSize}{\footnotesize}
 
 
 %INTRO
@@ -22,9 +10,6 @@
 \newcommand{\agrc}{\textsc{Agree-Copy}}
 
 %CARSTENS LOCAL COMMANDS, D'Alessandro has the same
-
-\newcommand{\smiley}{:)}
-
 
 \renewbibmacro*{index:name}[5]{%
 	\usebibmacro{index:entry}{#1}
@@ -67,10 +52,6 @@
 \newcommand{\NNext}[1][]{\ref{\refprefix\the\numexpr\value{xnumi}+2}#1}
 \newcommand{\Last}[1][]{\ref{\refprefix\the\numexpr\value{xnumi}}#1}
 \newcommand{\LLast}[1][]{\ref{\refprefix\the\numexpr\value{xnumi}-1}#1}
-
-%KALIN
-
-\renewcommand{\lsID}{165}
 
 %DIERCKS ET AL
 

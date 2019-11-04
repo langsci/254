@@ -22,34 +22,35 @@ Agreement is a pervasive phenomenon across natural languages \citep{corbett2006}
 Since the introduction of the operation of \agr{} in \citet{Chomsky2000}, (\ref{agr}), agreement phenomena and the mechanism that underlies agreement have garnered a lot of attention in the Minimalist literature and have received different treatments at different stages.
 
 \begin{exe}
-	\ex \agr {} (taken from \citealp{Zeijlstra2012})\\
+	\ex \agr{} (taken from \citealp{Zeijlstra2012})\\
 	$\alpha$ can agree with $\beta$ iff:
-	\begin{itemize}
-		\item[a.] $\alpha$ carries at least one unvalued and uninterpretable feature and $\beta$ carries a matching interpretable and valued feature.
-		\item[b.] $\alpha$ c-commands $\beta$
-		\item[c.] $\beta$ is the closest goal to $\alpha$
-		\item[d.] {$\beta$ bears an unvalued uninterpretable feature.}
-	\end{itemize} \label{agr}
+	\begin{xlista}
+		\ex $\alpha$ carries at least one unvalued and uninterpretable feature and $\beta$ carries a matching interpretable and valued feature.
+		\ex $\alpha$ c-commands $\beta$
+		\ex $\beta$ is the closest goal to $\alpha$
+		\ex {$\beta$ bears an unvalued uninterpretable feature.}
+	\end{xlista} \label{agr}
 \end{exe}
 While the most common mechanism to handle feature dependencies at a distance in current work is still the operation {\agr} introduced in \citet{Chomsky2000}, the landscape of approaches to this operation has become very large, with there being prominent debates surrounding various aspects of the formulation of \agr.
 Some of these debates are addressed below, where they are relevant for our collection.
-\begin{compactenum}
+
+\begin{enumerate}\itemsep0pt
 	\item Should agreement be handled by a dedicated operation of \agr, which is a primitive operation of the syntactic component like Merge?
-	\item If so, what is the direction of the \agr {} operation?
-	\item Is \agr {} fully syntactic, fully post-syntactic, or spread across both domains?
-	\item Are \agr {} relations restricted to certain feature types?
+	\item If so, what is the direction of the \agr{} operation?
+	\item Is \agr{} fully syntactic, fully post-syntactic, or spread across both domains?
+	\item Are \agr{} relations restricted to certain feature types?
 	\item What is the relevant locality domain of \agr?
 	\item What phenomena should be handled by \agr?
 	\item Is agreement parasitic on other factors, or can it apply freely?
-	\item What is the interaction of \agr {} with other operations (e.g. labelling, merge)?
-\end{compactenum}
+	\item What is the interaction of \agr{} with other operations (e.g. labelling, merge)?
+\end{enumerate}
 The papers that are collected together in this volume collectively address these debates. Throughout the rest of this introduction, we summarise some of the major viewpoints that have factored into the questions given above.
-The introduction is not intended as a comprehensive survey of agreement patterns in natural languages, nor is it intended as an overview article on the history of agreement throughout the Minimalist Programme.\footnote{For the former, we refer the reader to \citet{corbett2006}, and for the latter, we refer the reader to discussions in \citet{Fuss2005}, \citet{baker2008}, \citet{Miyagawa2010}, \citet{preminger2015}.}
+The introduction is not intended as a comprehensive survey of agreement patterns in natural languages, nor is it intended as an overview article on the history of agreement throughout the Minimalist Programme.\footnote{For the former, we refer the reader to \citet{corbett2006}, and for the latter, we refer the reader to discussions in \citet{Fuss2005,baker2008,Miyagawa2010,preminger2015}.}
 Rather, we simply aim to highlight current theoretical points of interest to give some context to the rest of the papers in this book.
 
-\noindent All of these debates remain active in the literature to this day.
+All of these debates remain active in the literature to this day.
 This volume collects various papers to explore these topics and contribute to the ongoing debates surrounding agreement.
-The goal of this book and the collected papers is not to present a single perspective of how \agr {} should operate in Minimalism; rather the goal is to explore these debates from a variety of perspectives.
+The goal of this book and the collected papers is not to present a single perspective of how \agr{} should operate in Minimalism; rather the goal is to explore these debates from a variety of perspectives.
 
 \section{Current theoretical debates surrounding agreement}
 \label{seccurrentdebates}
@@ -59,11 +60,12 @@ The goal of this book and the collected papers is not to present a single perspe
  
 When looking at the nature of agreement it is of course necessary to first define what it is that we are investigating, i.e. what phenomena of languages should be classed as agreement. This area is open to debate as we will see, but it is crucial to enagage this problem, so that we can answer the question of which features can participate in the {\agr} relation.
 
-Traditionally, and in its most narrow sense, agreement is used to describe the variation of the verbal form depending on features, such as Person, Number and Gender, traditionally also grouped together as $\phi$-features, of its arguments \citep{preminger2015}.
+Traditionally, and in its most narrow sense, agreement is used to describe the variation of the verbal form depending on features, such as Person, Number and Gender, traditionally also grouped together as $\phi$-fea\-tures, of its arguments \citep{preminger2015}.
 These features often, but not always, interact with the Tense, Aspect and Mood features of the verb to produce a variety of different verb forms.
 English has a quite impoversihed morphological system, but one can see that the form of the verb differs in the present tense, depending on whether the subject is \textsc{1sg} or \textsc{3sg}, (\ref{ex:engintro}).
 
-This is a pattern seen frequently across languages, but sensitivity to more than one argument is also possible, for example (\ref{ex:swa-subj-obj}) from Swahili, where $\phi$-feature agreement takes place between the verb, the subject and the object.\footnote{This type of agreement is very often linked to case, but see the discussion in section \ref{sec:parasitic}.}
+This is a pattern seen frequently across languages, but sensitivity to more than one argument is also possible, for example (\ref{ex:swa-subj-obj}) from Swahili, where $\phi$-feature agreement takes place between the verb, the subject and the object.\footnote{This type of agreement is very often linked to case, but see the discussion in \sectref{sec:parasitic}.}
+
 \begin{exe}
 	\ex \label{ex:engintro}
 	\begin{xlist}
@@ -79,17 +81,17 @@ This is a pattern seen frequently across languages, but sensitivity to more than
 	\glt `The goat saw the tree.'
 	
 \end{exe}
-Verbal agreement is not the only syntactic process where the sharing of $\phi$-features between to elements seems to be involved.
-Another prominent case, this time in the nominal domain, is nominal concord, i.e. the sharing of $\phi$-features between a head noun and its modifiers (\ref{ex:swa-concorde}).
+Verbal agreement is not the only syntactic process where the sharing of $\phi$-fea\-tures between to elements seems to be involved.
+Another prominent case, this time in the nominal domain, is nominal concord, i.e. the sharing of $\phi$-fea\-tures between a head noun and its modifiers (\ref{ex:swa-concorde}).
 However, even though the same types of features seem to be involved in nominal concord, there are important differences to verbal agreement (but see \citealt{Carstens2001} and \citealt{Baker2008a} for a different point of view). Thus, for example, according to \citet[][7]{Norris2014}, while agreement is expressed on several loci in Concord, it is only expressed once in verbal agreement. Similarly, where verbal agreement involves agreement between two different extended projections (nominal and verbal), Concord is only part of one extended projection, the nominal one.
 
 This of course raises the question whether these differences can be accounted for while still assuming an underlying \agr{} operation, or whether these differences suggest a completely different mechanism \citep{Norris2014}.
+
 \begin{exe}
 	\ex Swahili \label{ex:swa-concorde}\\
 	\gll ki-tabu ki-pya ki-zuri\\
 	7-book 7-new 7-nice\\
 	\glt `a nice new book'
-	
 \end{exe}
 Soon after the introduction of the {\agr} operation by \citet{Chomsky2000,Chomsky2001}, it became clear that this mechanism provided a powerful tool to model dependencies between syntactic elements far beyond $\phi$-feature agreement.\footnote{This possibility is also inherent in older definitions of agreement \citep{steel1978,kayne1989}.}
 In addition, work in the Minimalist Programme abandoned general transformations of the type \textit{Move $\alpha$} regulated by certain filters, instead introducing the assumption that movement processes needed to be triggered by features.
@@ -100,12 +102,13 @@ Looking outside of verbal and nominal agreement, other processes seem to share t
 At its core, such nominal and verbal agreements have in common that there is a dependent element that changes its form based on the features of another item.
 If we define `agreement' in such a broad manner, then another obvious candidate for an analysis in terms of agreement would be anaphoric binding (\ref{ex:binding}). The main problem for such a theory appears to be the c-command relations between the elements involved, as the dependent element seems to be c-commanded by the element providing the features. Various proposals to overcome this problem can be found in the literature, ranging from movement of the anaphor \citep{rooryckvandenwyngaerd} to the postulation of functional heads regulating the agreement processes \citep{reuland2001,reuland2011} to a reversal of the agreement relation \citep{bjorkmanzeijlstra}.
 
-\noindent Another, well-known phenomenon that has received an analysis in terms of $\phi$-feature agreement is Control. Starting with \citet{hornstein1999}, it has been argued that Control involves agreement between the matrix verb and the embedded subject, based on $\phi$-features, with subsequent movement of the embedded subject to the matrix spec-TP (\ref{ex:control}), comparable to raising (\ref{ex:raising}). Whether this analysis is on the right track is still debated (see \citealt{landau2013} for an overview), but it shows yet again how {\agr} can be employed in analysing very diverse phenomena.
+Another, well-known phenomenon that has received an analysis in terms of $\phi$-feature agreement is Control. Starting with \citet{hornstein1999}, it has been argued that Control involves agreement between the matrix verb and the embedded subject, based on $\phi$-fea\-tures, with subsequent movement of the embedded subject to the matrix spec-TP (\ref{ex:control}), comparable to raising (\ref{ex:raising}). Whether this analysis is on the right track is still debated (see \citealt{landau2013} for an overview), but it shows yet again how {\agr} can be employed in analysing very diverse phenomena.
+
 \begin{exe}
 	\ex \label{ex:binding}
 	\begin{xlist}
-		\ex {Frank saw himself in the mirror.}
-		\ex {*Frank saw herself in the mirror.}
+		\ex[]{Frank saw himself in the mirror.}
+		\ex[*]{Frank saw herself in the mirror.}
 	\end{xlist}
 	\ex
 	\begin{xlist}
@@ -113,8 +116,9 @@ If we define `agreement' in such a broad manner, then another obvious candidate 
 		\ex {  John expects [\sub{TP} \trace{John} to see himself in the mirror.]} \label{ex:control}
 	\end{xlist}
 \end{exe}
-While nominal concord can be analyzed as sharing of $ \phi $-features, other types of concord seem to involve other kinds of features that are shared between the different elements, suggesting agreement processes based on features other than those participating in nominal concord. Thus, \citet{zeijlstra2004} has argued that negative concord and even NPI licensing can be analyzed as agreement processes based on sharing [NEG] features (\ref{ex:neg}) \citep{haegemanzanuttini1991}. In a very similar fashion, \citet{Zeijlstra2012} has suggested to analyze Sequence of Tense, where the embedded tense is dependent on the matrix tense, as agreement based on tense features between the various T-nodes involved (\ref{ex:tense}).
+While nominal concord can be analyzed as sharing of $ \phi $-fea\-tures, other types of concord seem to involve other kinds of features that are shared between the different elements, suggesting agreement processes based on features other than those participating in nominal concord. Thus, \citet{zeijlstra2004} has argued that negative concord and even NPI licensing can be analyzed as agreement processes based on sharing [\textsc{neg}] features (\ref{ex:neg}) \citep{haegemanzanuttini1991}. In a very similar fashion, \citet{Zeijlstra2012} has suggested to analyze Sequence of Tense, where the embedded tense is dependent on the matrix tense, as agreement based on tense features between the various T-nodes involved (\ref{ex:tense}).
 Again the issue here is not whether these analyses are correct but simply to show the very general applicability of the operation {\agr} to a variety of different phenomena requiring different types of features to participate in the operation.
+
 \begin{exe}
 	\ex \label{ex:neg}
 	\begin{xlist}
@@ -127,28 +131,28 @@ Again the issue here is not whether these analyses are correct but simply to sho
 \end{exe}
 
 \begin{exe}
-	\ex \label{ex:tense} {[}John T\sub{[\textsc{past}]}  [said\sub{[\textsc{past}]} [Mary was\sub{[\textsc{past}]} ill]]] \hfill \citet{Zeijlstra2012}
+	\ex \label{ex:tense} {[}John T\sub{[\textsc{past}]}  [said\sub{[\textsc{past}]} [Mary was\sub{[\textsc{past}]} ill]]] \hfill \citep{Zeijlstra2012}
 \end{exe}
 Turning to cartographic approaches of sentence structure, it has been mentioned above that in current syntactic theory, movement crucially depends on prior agreement as all movement has to be triggered by agreeing features. Consequently, cartographic approaches towards syntax combined with movement of elements in dedicated projections require a wealth of features to participate in the necessary agreement processes. Focusing on information structure and the sentential left periphery as outlined in \citet{Rizzi1997}, it has often been observed, even before Rizzi's seminal work, that information structure, i.e. topic and focus, is very frequently encoded by left-dislocating the respective element to a sentence initial position.
 
 \citet{Rizzi1997} conclusively showed for Italian that topics and foci, when moved to the left periphery, target different functional projections, sandwiched below Force, which encodes the clause type, and above Fin, which encodes finiteness. As movement of topics and foci targets different projections, specifiers of TopP and FocP respectively, the different movements are due to agreement relations established between topic features for moved topics and focus features for moved foci. 
 
-\citet{Miyagawa2010,Miyagawa2017} capitalizes on the idea of agreeing information-structural features in a different way. Following the idea of feature inheritance introduced in \citet{Chomsky2008}, the idea that T inherits all its features from the phase head C, Miyagawa argues that in discourse configurational languages, T does not inherit $\phi$-features from C, but information-structural, so-called $\delta$-features. In these languages then, agreement relations based on information structural features actually replace those based on $\phi$-features, suggesting again that agreement and {\agr} play a much more important and much more general role than just in $\phi$-agreement.
+\citet{Miyagawa2010,Miyagawa2017} capitalizes on the idea of agreeing information-struc\-tur\-al features in a different way. Following the idea of feature inheritance introduced in \citet{Chomsky2008}, the idea that T inherits all its features from the phase head C, Miyagawa argues that in discourse configurational languages, T does not inherit $\phi$-fea\-tures from C, but information-structural, so-called $\delta$-features. In these languages then, agreement relations based on information structural features actually replace those based on $\phi$-fea\-tures, suggesting again that agreement and {\agr} play a much more important and much more general role than just in $\phi$-agreement.
 
 Instead of listing more types of features for which agreement relations have been proposed in the literature, we want to briefly discuss a different perspective from which the features participating in agreement relations can vary, namely the actual specification or shape of the various features. 
-Initially \citep{Chomsky1995} proposed that agreement must necessarily involve a spec-head configuration. Whether this configuration need to be established overtly or covertly was dependent on the strength of the features involved: strong features required an overt spec-head configuration, for weak features, this configuration could be established at LF. This dichotomy between strong and weak features was largely abandoned with the introduction of the \agr {} mechanism in \citet{Chomsky2000,Chomsky2001}. Instead, features were assumed to differ along two dimensions, interpretability and valuation. In Chomksy's original proposal, interpretability referred to features which are legible to the interfaces or not, i.e. interpretable features could survive until LF while uninterpretable features had to be checked during the syntactic derivation, with this being dependent on agreement with an interpretable counterpart. Since interpretability is a semantic property and therefore not visible to syntax, it was assumed that the interpretable features also always carried a value while the uninterpretable features were initially unvalued and had to acquire their value through agreement.
+Initially \citet{Chomsky1995} proposed that agreement must necessarily involve a spec-head configuration. Whether this configuration need to be established overtly or covertly was dependent on the strength of the features involved: strong features required an overt spec-head configuration, for weak features, this configuration could be established at LF. This dichotomy between strong and weak features was largely abandoned with the introduction of the \agr{} mechanism in \citet{Chomsky2000,Chomsky2001}. Instead, features were assumed to differ along two dimensions, interpretability and valuation. In Chomksy's original proposal, interpretability referred to features which are legible to the interfaces or not, i.e. interpretable features could survive until LF while uninterpretable features had to be checked during the syntactic derivation, with this being dependent on agreement with an interpretable counterpart. Since interpretability is a semantic property and therefore not visible to syntax, it was assumed that the interpretable features also always carried a value while the uninterpretable features were initially unvalued and had to acquire their value through agreement.
 
-Even though this approach  to agreement and \agr {} is still used, many modifications have been discussed in the literature. For example, \citet{pesetskytorrego2007} proposed to abandon the correlation between valuation and interpretability, so that all four possible combinations of these properties can be found in syntax.
-A different modification has recently been defended in \citet{smithdiss,smithsse}, namely that at least for $\phi$-features, the same feature consists of a morphological and a semantic part, which can both be valued and which are subject to different restrictions on \agr.
+Even though this approach  to agreement and \agr{} is still used, many modifications have been discussed in the literature. For example, \citet{pesetskytorrego2007} proposed to abandon the correlation between valuation and interpretability, so that all four possible combinations of these properties can be found in syntax.
+A different modification has recently been defended in \citet{smithdiss,smithsse}, namely that at least for $\phi$-fea\-tures, the same feature consists of a morphological and a semantic part, which can both be valued and which are subject to different restrictions on \agr.
 
 
 \subsection{Locality of agreement}
 \label{sec:locality}
 
-Before the introduction of \agr, feature checking was assumed to take place in the most local configuration, i.e. a specifier-head configuration \citep{Chomsky1995}. This configuration was either established in narrow syntax or at LF, depending on the so-called strength of the feature, strong or weak, respectively. With the introduction of \agr {} in \citet{Chomsky2000,Chomsky2001}, it became possible for features to interact over a distance and movement into spec-head configurations for agreement was assumed to be triggered by something additional to \agr, for example the EPP.
+Before the introduction of \agr, feature checking was assumed to take place in the most local configuration, i.e. a specifier-head configuration \citep{Chomsky1995}. This configuration was either established in narrow syntax or at LF, depending on the so-called strength of the feature, strong or weak, respectively. With the introduction of \agr{} in \citet{Chomsky2000,Chomsky2001}, it became possible for features to interact over a distance and movement into spec-head configurations for agreement was assumed to be triggered by something additional to \agr, for example the EPP.
 
-Allowing features to establish relations across a distance of course raised the question whether this distance was constrained in any way. The formulation of \agr {} in \citet{Chomsky2000,Chomsky2001} does not contain any locality restrictions except that the probe needed to c-command the goal. On the other hand, it was well-known that movement, another operation that applied across a certain distance, was subject to rather strict locality constraints.
-These locality constraints for movement are often subsumed under the term `phases' --- certain projections in the clausal spine that delimit local syntactic domains --- and movement out of those projections is only possible from their edge, which is the highest head of the projection and its specifier.
+Allowing features to establish relations across a distance of course raised the question whether this distance was constrained in any way. The formulation of \agr{} in \citet{Chomsky2000,Chomsky2001} does not contain any locality restrictions except that the probe needed to c-command the goal. On the other hand, it was well-known that movement, another operation that applied across a certain distance, was subject to rather strict locality constraints.
+These locality constraints for movement are often subsumed under the term ``phases'' -- certain projections in the clausal spine that delimit local syntactic domains -- and movement out of those projections is only possible from their edge, which is the highest head of the projection and its specifier.
 
 This of course raises the question whether the locality domain of agreement is the same as for movement, i.e. the phase (see \citealp{bobaljikwurmbrand2005} for discussion).
 Most cases of agreement do indeed seem to be maximally clause bound.
@@ -156,6 +160,7 @@ However, there does seem to be possibility of agreeing with the edge of a lower 
 A famous example of this is seen in Tsez \citep{polinskypotsdam2001}, where in the first example the agreement on the matrix verb is class \textsc{IV}, ostensibly controlled by agreement with the embedded clause as a whole.
 However, in the second example, the matrix verb shows class \textsc{III} agreement, which reflects the interpretation of `the bread' being a topic.
 \citet{polinskypotsdam2001} argue that \textit{magalu} moves into the embedded left-periphery at LF, and being in the edge of the lower phase, is close enough for agreement to succeed.
+
 \begin{exe}
 	\ex
 	\begin{xlist}
@@ -170,30 +175,32 @@ However, in the second example, the matrix verb shows class \textsc{III} agreeme
 	\end{xlist}
 \end{exe}
 Several proposals similar to that of \cite{polinskypotsdam2001}, which treat long-distance agreement comparable to long-distance wh-movement as successive cyclic, can be found in the literature \citep{Legate2005,Frank2006,bjorkmanzeijlstra}.
-Under this approach, \agr {} is subject to the same locality constraints as movement, so that agreement across a phase boundary has to proceed through an intermediate agreement step in the phase edge.
+Under this approach, \agr{} is subject to the same locality constraints as movement, so that agreement across a phase boundary has to proceed through an intermediate agreement step in the phase edge.
 
-On the other hand, \citet{Boskovic2007} takes similar data from long-distance agreement, more specifically from Chukchee, (\ref{ex:chukchee}), to indicate that \agr{} is not subject to the same locality constraints as movement, in that it is not subject to the phase impenetrability condition (PIC). In (\ref{ex:chukchee}), the matrix verb, \textit{regret} seems to agree at least in number with the object, \textit{reindeers}, of the embedded clause. Since the embedded clause appears to be finite, it is likely a CP with the agreement relation between the matrix verb and the embedded object crossing the CP phase boundary, clearly a violation of PIC if no intermediate agreement step is assumed.
+On the other hand, \citet{Boskovic2007} takes similar data from long-distance\linebreak agreement, more specifically from Chukchee, (\ref{ex:chukchee}), to indicate that \agr{} is not subject to the same locality constraints as movement, in that it is not subject to the phase impenetrability condition (PIC). In (\ref{ex:chukchee}), the matrix verb, \textit{regret} seems to agree at least in number with the object, \textit{reindeers}, of the embedded clause. Since the embedded clause appears to be finite, it is likely a CP with the agreement relation between the matrix verb and the embedded object crossing the CP phase boundary, clearly a violation of PIC if no intermediate agreement step is assumed.
+
 \begin{exe}
 	\ex Chukchee \citep{Boskovic2007}\\
 	\gll ənan {qəlɣiļu ləŋərkə-nin-et} [iŋqun Ø-rətəmŋəv-nen-at qora-t.]\\
 	he regrets-3-\textsc{pl} that \textsc{3sg}-lost-3-\textsc{pl} reindeer-\textsc{pl}\\
 	\glt `He regrets that he lost the reindeer.' \label{ex:chukchee} 
 \end{exe}
-In addition, there might be even more complex interactions between \agr, movement and phases. Thus, \citet{branan2018}, in part based on \citet{rackowskirichards2005}, argues that if \agr {} with a phase as a whole takes place, this agreement unlocks the phase for movement out of this phase bypassing the phase edge.
+In addition, there might be even more complex interactions between \agr, movement and phases. Thus, \citet{branan2018}, in part based on \citet{rackowskirichards2005}, argues that if \agr{} with a phase as a whole takes place, this agreement unlocks the phase for movement out of this phase bypassing the phase edge.
 While not discussed explicitly, this, under a standard approach to movement, then also supposedly licenses agreement without the intermediate step of agreeing with the phase edge. While this prediction is in need of further investigation it again highlights the non-trivial relation between \agr, movement and locality domains.
 
 \subsection{The timing of \textsc{Agree}}
 \label{sectiming}
 
-A further question surrounding the formulation of \agr {} is whether it should be seen as an operation that takes place purely in the `narrow' syntax, or has a wider domain. 
-\agr {} is standardly seen as a primarily syntactic operation, due to its apparent interaction with other syntactic processes, however, in recent years \cite{Bobaljik2008} has argued that agreement should be seen as an operation of the post-syntactic component, whilst there are other approaches that argue for the operation to be divided over the two components \citep{benmamounetal2009,bhattwalkow2013,marusicetal2015}.
+A further question surrounding the formulation of \agr{} is whether it should be seen as an operation that takes place purely in the ``narrow'' syntax, or has a wider domain. 
+\agr{} is standardly seen as a primarily syntactic operation, due to its apparent interaction with other syntactic processes, however, in recent years \cite{Bobaljik2008} has argued that agreement should be seen as an operation of the post-syntactic component, whilst there are other approaches that argue for the operation to be divided over the two components \citep{benmamounetal2009,bhattwalkow2013,marusicetal2015}.
 This view of agreement requires a particular view of the syntax-morphology interface, namely that morphology follows the syntax, such as is assumed in Distributed Morphology \citep{hallemarantz1993,arreginevins2012}.
 In such a view, there is a set of operations that take place after the syntax proper, such as linearisation of hierarchichal structure, certain mainipulations of features (fusion, fission) and so on.
 If agreement takes place in the post-syntactic component, then we expect there to be interactions with these operations, which we do not expect if it is an operation solely of the syntax proper.
 
-It seems clear that \agr {} is sensitive to properties familiar from the syntactic component, such as c-command and locality, however, it also seems to be occasionally not subject to such considerations. 
+It seems clear that \agr{} is sensitive to properties familiar from the syntactic component, such as c-command and locality, however, it also seems to be occasionally not subject to such considerations. 
 Studies of Closest Conjunct Agreement have suggested that agreement can, at least in part, involve linear relations without c-command, hinting at being in part post-syntactic.
 There are a number of clear examples of agreement being, in some cases, sensitive to linear properties as opposed to hierarchichal ones, and we illustrate here with data from Tsez \citep{benmamounetal2009}:
+
 \begin{exe}
 	\ex
 	\begin{xlist}
@@ -211,24 +218,24 @@ The agreement prefix on the verb changes according to what is the linearly close
 In (\ref{exccaa}), the agreement prefix is null, indicating agreement with the second conjunct \emph{u\v{z}i-n} `boy' which is gender class I.
 By way of contrast, we see agreement with the closer conjunct \emph{kid-no} in (\ref{exccab}), where the verbal prefix \emph{y-} agrees for gender class II.
 
-\noindent Note that the only difference is the position of the coordination relative to the verb.
+Note that the only difference is the position of the coordination relative to the verb.
 In (\ref{exccaa}) it is preverbal and the second of the two conjuncts is closer to the verb, whereas in (\ref{exccab}) the coordination is postverbal, and so the first conjunct is closer to the verb.
-Coordinations are especially relevant, since following \citet{munn1993} \emph{a.o.} they are commonly --- though not universally \citep[see][]{borsley2005} --- assumed to involve an asymmetric structure whereby the first conjunct is structurally higher than the second.
+Coordinations are especially relevant, since following \citet{munn1993} a.o. they are commonly -- though not universally \citep[see][]{borsley2005} -- assumed to involve an asymmetric structure whereby the first conjunct is structurally higher than the second.
 If this structure is correct, then whether the conjunction is postverbal or preverbal, the first conjunct will always be structurally highest, and it becomes very difficult to account for the positional sensitivity of the agreement prefix without making reference to linear order.\footnote{It is possible that one can handle the Tsez data without recourse to linearly motivated agreement, by assuming that the hierarchical structure of the coordination can differ \citep[cf.][]{johannessen1996}.
 	Namely, when one sees agreement with the leftmost conjunct, the coordination phrase branches in the familiar rightwards manner, where the leftmost conjunct asymmetrically c-commands the rightmost conjunct.
 	On the other hand, where agreement is shown with the rightmost conjunct, this structure would be the converse, i.e. a leftward branching structure where the rightmost conjunct asymmetrically c-commands the leftmost one.
 	Varying the structure in such a way will always allow agreement to be with the highest conjunct, and as such offers no evidence for agreement taking place after the syntactic structure has been linearised.
 	This proposal is considered, and ruled out by \citet{benmamounetal2009}.}
 
-\citet{benmamounetal2009}, and others following in their footsteps \citep[including \emph{a.o.}][]{arreginevins2012,bhattwalkow2013,smithdiss,smithagrhierarchy, smithsse},  propose that \agr {} is decomposed into two sub-operations, such as in the following (adapted from \citealp{arreginevins2012}):
+\citet{benmamounetal2009}, and others following in their footsteps \citep[including a.o.][]{arreginevins2012,bhattwalkow2013,smithdiss,smithagrhierarchy, smithsse},  propose that \agr{} is decomposed into two sub-operations, such as in the following (adapted from \citealp{arreginevins2012}):
 
 \begin{exe}
 	\ex
 	Agreement between a controller and target proceeds in two steps: 
-	\begin{itemize}
-		\item[a.] \agrl: in the syntax, a target has unvalued $\phi$-features that triggers \agr {} with controller. The result is a link between controller and target.
-		\item[b.] \agrc: the values of the $\phi$-features of controller are copied onto target linked to it by \agrl.
-	\end{itemize}
+	\begin{xlista}
+		\ex \agrl: in the syntax, a target has unvalued $\phi$-features that triggers \agr{} with controller. The result is a link between controller and target.
+		\ex \agrc: the values of the $\phi$-features of controller are copied onto target linked to it by \agrl.
+	\end{xlista}
 \end{exe}
 
 \noindent The first, \agrl {} takes place in the syntax proper and operates on hierarchical structures, matching the elements carrying the probe and the goal.
@@ -239,16 +246,17 @@ In the Tzez data, just discussed, then \agrl {} is assumed to take place, and li
 If the conjunction is postverbal, then the leftmost conjunct is closest, and if it is preverbal, then the rightmost conjunct is closest.
 
 There have been notable attempts to account for last conjunct agreement in a purely structural manner \citep{johannessen1996,boskovic2009}, however, the case for linear sensitivity here is strong and has been confirmed in a number of languages, and we refer the reader to \citet{marusicetal2015} and \citet{emsspnas}, as well as \textcitetv{chapters/06-marusic-nevins} for further discussion.
-Furthermore, the appeal to linear sensitivity is supported by converging evidence from agreement phenomena unrelated to conjunction agreement that support the bifurcation of \agr {} into \agrc {} and \agrl, such as interactions of morphemes in the Basque auxiliary system \citep{arreginevins2012}, semantic agreement \citep{smithdiss,smithagrhierarchy}, and further interactions between agreement and morphological operations (for example \citetv{chapters/05-kalin}).
+Furthermore, the appeal to linear sensitivity is supported by converging evidence from agreement phenomena unrelated to conjunction agreement that support the bifurcation of \agr{} into \agrc {} and \agrl, such as interactions of morphemes in the Basque auxiliary system \citep{arreginevins2012}, semantic agreement \citep{smithdiss,smithagrhierarchy}, and further interactions between agreement and morphological operations (for example \citetv{chapters/05-kalin}).
 
 \subsection{The direction of \agr}
 \label{sec:direction}
 
-Another debate is over what the direction of the \agr {} operation is.
-In its original formulation, Chomsky proposed that \agr {} should be formulated in such a way that the probe  c-commanded the goal.
+Another debate is over what the direction of the \agr{} operation is.
+In its original formulation, Chomsky proposed that \agr{} should be formulated in such a way that the probe  c-commanded the goal.
 This was motivated in large part by the desire to have {\agr} as the first step of the movement operation that would raise the subject into Spec,TP from Spec,vP, and so implicating agreement in satisfying the EPP.
 There are also clear cases where {\agr} does seem to look down in the structure.
 In nominative object constructions, such as the following in Icelandic for instance, agreement is clearly with the object, and there is little evidence to suggest that the object ever raises above Spec,TP (see \citealp{zmt1985} for arguments that the nominative object is not the subject in such sentences).
+
 \begin{exe}
 	\ex
 	\gll Það líkuðu einhverjum þessir śokkar.\\
@@ -258,12 +266,13 @@ In nominative object constructions, such as the following in Icelandic for insta
 Though this view has remained by and large the more widely accepted view, there have been a variety of proposals which seek to weaken this viewpoint, and allow {\agr} to look upwards in the structure, more or less easily depending on the proposal in question.
 For instance, \citet{bejarrezac2009}, on the basis of person hierarchy effects in agreement, argue that if {\agr} fails to fully value a probe looking downwards, it is allowed to look upwards in the structure, at least to the specifier of the probe.
 Other accounts have also taken the view that {\agr} can look upwards in the structure, but not as a last resort.
-Some work that is based on agreement patterns in Bantu languages has argued that agreement on T must be able to look upwards to its specifier, since agreement in Bantu is uniformly with the element that is in Spec,TP (cf. the Icelandic example in (\ref{ex:icelandicnomobj}).
+Some work that is based on agreement patterns in Bantu languages has argued that agreement on T must be able to look upwards to its specifier, since agreement in Bantu is uniformly with the element that is in Spec,TP (cf. the Icelandic example in \ref{ex:icelandicnomobj}).
+
 \begin{exe}
 	\ex Kinande \citep{Baker2003}\\
 	\gll Omo-mulongo mw-a-hik-a mukali.\\
 	\textsc{18.loc}-3.village \textsc{18s-t-}arrive-\textsc{fv} 1.woman\\
-	\glt `At the village arrived a woman.' \label{ex:bantuloc} \hfill Kinande, \citet{Baker2003}
+	\glt `At the village arrived a woman.' \label{ex:bantuloc}
 \end{exe} 
 However, data like (\ref{ex:bantuloc}), though certainly suggestive of {\agr} being able to look upwards, cannot be taken as proof.
 As \citet{premingerpolinsky2015} point out, in such cases, we cannot definitively rule out a derivation whereby the controller of agreement moves to some functional position FP just beneath TP, before moving to the specifier of TP itself.
@@ -273,7 +282,7 @@ Thus, in order to make the argument that agreement can look upwards, what is nee
 It is difficult to find such configurations with any certainty when looking at $\phi$-agreement.
 
 
-Since \citet{koopmansportiche1991}, it is widely assumed that subjects are merged in Spec,vP, and so will always begin the derivation lower than T, the usually assumed locus of subject, verb agreement.
+Since \citet{koopmansportiche1991}, it is widely assumed that subjects are\linebreak merged in Spec,vP, and so will always begin the derivation lower than T, the usually assumed locus of subject, verb agreement.
 Thus, we would need the locus of subject agreement to be on \emph{v}, or lower.
 \citet{bejarrezac2009} present a compelling case that Basque has (some) verbal agreement on \textit{v}, however, this does not seem to be a common configuration for verbal agreement, and the usual case seems to be that agreement is higher in the structure.
 
@@ -281,6 +290,7 @@ If we look beyond verbal-agreement, then a range of phenomena have been document
 Though many of these cases provide the requisite configuration for upwards agreement to be tested, there does not seem to be a current consensus over what exactly these phenomena show.
 
 Take binding for instance, such as the simple examples in (\ref{ex:anaph}).
+
 \begin{exe}
 	\ex \label{ex:anaph}
 	\begin{xlist}
@@ -295,7 +305,7 @@ Specifically, in English, the pronominal base of the anaphor must agree with the
 This feature sharing relation makes binding seem like a prototypical {\agr} relation, an idea which is further strengthened by binding relations often showing locality effects that are similar to, if not always exactly alike with locality relationships in agreement.
 If this does involve \agr, then it seems to be the ideal proving ground for the claim that {\agr} can look upwards, given that the target of agreement (the anaphor) is c-commanded by the controller (the antecedent) at all levels, given that the antecedent is a subject, and so  generated higher than the antecedent, an object.
 
-Yet, we must take care before concluding that even if it \emph{is} an {\agr} relation, we are truly dealing with an upwards {\agr} relation.\footnote{\citet{Preminger2013}, \citet{premingerpolinsky2015} have cast doubt on whether other phenomena truly share the same mechanism that underlies $\phi$-agreement.
+Yet, we must take care before concluding that even if it \emph{is} an {\agr} relation, we are truly dealing with an upwards {\agr} relation.\footnote{\citet{Preminger2013} and \citet{premingerpolinsky2015} have cast doubt on whether other phenomena truly share the same mechanism that underlies $\phi$-agreement.
 	We do not take any stance on this here, only pointing out that there is controversy over whether data not exhibiting $\phi$-agreement can be used to bear on the nature of {\agr}.}
 The reason to be cautious here, is that a variety of proposals have been offered for binding that require a step of downwards agreement.
 \citet{rooryckvandenwyngaerd} for instance argue that the anaphor rises to a position above the antecedent early in the derivation, before the subject raises to Spec,TP.
@@ -309,7 +319,7 @@ Thus, the apparent upwards character of the {\agr} relation is in fact a series 
 Another question is whether {\agr}, and agreement in general, should be seen as something that can apply freely, or whether there are preconditions as to whether it can apply.
 When \citet{Chomsky2000,Chomsky2001} first introduced the {\agr} operation, agreement between T and the subject seemed to be part of a wider operation that would assign case to the subject and would raise the subject to Spec,TP.
 In this model, the agreement mechanism in some sense led to the case assignment: the subject DP needed to have $\phi$-features so that it would be visible to the probe, and thus form a suitable goal for T.
-However, this in some respects set up a situation where case assignment was parasitic on agreement, but this conclusion has been rejected in more recent work, on three grounds: (i) where there is a connection between case and agreement, it is agreement that is dependent on case and not the other way around \citep{Bobaljik2008,preminger2011,preminger2015}; (ii) for some languages, there is no requirement that the element that undergoes agreement with T is assigned case by it \citep{baker2008}; (iii) agreement is a wider phenomenon than subject-verb agreement, and for other types of agreement, case does not play a role --- notably, in object agreement, it is Information Structure that is the most important determiner of agreement relations \citep{dn2011}.
+However, this in some respects set up a situation where case assignment was parasitic on agreement, but this conclusion has been rejected in more recent work, on three grounds: (i) where there is a connection between case and agreement, it is agreement that is dependent on case and not the other way around \citep{Bobaljik2008,preminger2011,preminger2015}; (ii) for some languages, there is no requirement that the element that undergoes agreement with T is assigned case by it \citep{baker2008}; (iii) agreement is a wider phenomenon than subject-verb agreement, and for other types of agreement, case does not play a role -- notably, in object agreement, it is Information Structure that is the most important determiner of agreement relations \citep{dn2011}.
 
 Regarding the first point, in the original formulation of the {\agr} mechanism, it was the agreement features of the subject DP that ultimately allowed T to get into the appropriate relationship with the subject in order to assign it case.
 What is then unexpected on this account, is that the agreement patterns on the verb should be sensitive to the type of case that is assigned to the arguments.
@@ -320,11 +330,13 @@ Similarly, for every language that allows verbal agreement with a dative argumen
 Thus, there is a hierarchy such that the ability to agree with an absolutive argument is a precondition for agreeing with an ergative argument, and so on for dative.
 Secondly, there are languages where the verb can only agree with absolutive arguments, and will not agree with ergative arguments.
 Subject-verb agreement is thus a misnomer in these languages, because in a transitive clause, the verb will agree with the absolutive object, and not the ergative subject.
+
 \begin{exe}
 	\ex
 	$\underbrace{\underbrace{\underbrace{\textsc{Absolutive}}_{\text{Tsez, Hindi}} > \textsc{Ergative}}_{\text{Eskimo-Inuit, Mayan}} > \textsc{Dative}}_{\text{Basque,Abkhaz}}$
 \end{exe}
 Bobaljik demonstrates very clearly that agreement is determined according to the structurally highest DP that bears an availabe morphological case, with languages picking morphological case according to the dependent case hierarchy of \citet{Marantz1991}.\footnote{Bobaljik shows that nominative--accusative languages are consonant with this generalisation, building on earlier work by \citet{Moravcsik1974}.}
+
 \begin{exe}
 	\ex
 	Unmarked Case \textgreater {} Dependent Case \textgreater {} Lexical/Oblique Case
@@ -337,9 +349,10 @@ This last conclusion is, however, not without its detractors.
 
 As to the second of the arguments, that agreement on T is not connected to case, instructive data comes from the Bantu languages.
 Above, we said that T will agree with whatever element lies in its specifier.
-This in itself seems to confirm that agreement is not connected to case. The case of the element --- which in itself would need to be purely abstract, since most Bantu languages show little evidence for case on lexical nouns --- does not seem to play a role in determining whether it agrees with T or not.
+This in itself seems to confirm that agreement is not connected to case. The case of the element -- which in itself would need to be purely abstract, since most Bantu languages show little evidence for case on lexical nouns -- does not seem to play a role in determining whether it agrees with T or not.
 However, a stronger argument can be made, given that agreement with T can be determined by a PP.
 The following examples from Kinande illustrate, where the agreement prefix determined by the preverbal subject is boldfaced:
+
 \begin{exe}
 	\ex 
 	\begin{xlist}
@@ -368,6 +381,7 @@ Finally, it is not possible to maintain the view that {\agr} necessarily require
 In the first example, \textit{kalaŋ-ət} `reindeer.\textsc{pl}' is interpreted as a topic, and has been preestablished in the discourse. The verb agrees with the plurality of the object in this case.
 However, in the second sentence, the object is in focus, given that it is being questioned.
 As such, there is no agreement with the object:
+
 \begin{exe}
 	\ex
 	\begin{xlist}
@@ -425,15 +439,13 @@ In nominal constructions, the possessor, merged in Spec,nP moves to a higher pos
 For languages that have gender concord however, an \textsc{Agree} relation happens between \emph{n} and the possessor DP.
 This provides a shared feature that can serve as the label of [DP \emph{n}P], in the same way that Chomsky proposes the shared $\phi$-features on T and the subject DP percolate to label $\phi$P after subject raising.
 
-Along with deriving the differences between the two sets of languages, Carstens  proposes that her data offer evidence that agreement should be taken as a syntactic operation, and not as a postsyntactic phenomenon, given that labelling is assumed to be syntactic.\footnote{
-	Cf. the discussion in section \ref{sectiming} above.
-}
-Furthermore, Carstens argues that her analysis lends support to the idea that concord (DP-internal agreement) should be viewed as the same operation as agreement proper (DP-external), \emph{pace} \citet{Chomsky2001}, \citet{Chung2013}, \citet{Norris2014}, \citet{Baier2015}.
+Along with deriving the differences between the two sets of languages, Carstens  proposes that her data offer evidence that agreement should be taken as a syntactic operation, and not as a postsyntactic phenomenon, given that labelling is assumed to be syntactic.\footnote{Cf. the discussion in \sectref{sectiming} above.}
+Furthermore, Carstens argues that her analysis lends support to the idea that concord (DP-internal agreement) should be viewed as the same operation as agreement proper (DP-external), pace \citet{Chomsky2001,Chung2013,Norris2014,Baier2015}.
 
 \subsection{Smith}
 \label{sec:smith}
 
-Peter W. Smith looks at the patterns of object agreement in Khanty, which has been discussed in detail in work by Irena Nikolaeva, and also by Nikolaeva in cooperation Mary Dalrymple.
+Peter W. Smith looks at the patterns of object agreement in Khanty, which has been discussed in detail in work by \ia{Nikolaeva, Irena@Nikolaeva, Irena}Irena Nikolaeva, and also by Nikolaeva in cooperation \ia{Dalrymple, Mary@Dalrymple, Mary}Mary Dalrymple.
 According to the previous analyses of Khanty differential object marking, whether agreement arises or not is sensitive to the Grammatical Function of the object.
 Such a claim is interesting for numerous reasons, chiefly that the existence of Grammatical Functions or the lack thereof is a key point of contention between different theories of generative syntax.
 Furthermore, in the narrower interest of this volume, the data bear on the issue of the types of features and items that agreement can be sensitive to (see the discussion above).
@@ -451,23 +463,23 @@ Laura Kalin discusses complex agreement patterns in Senaya, a Neo-Aramaic langua
 
 Progressive verbs with two agreeing arguments in Senaya provide three different agreement slots, two supplied by the verb directly and one supplied by the affixal auxiliary. While the slots in which subject and object agreement surface are fixed outside the progressive, different agreement configurations can be found inside the progressive, however, with the agreement markers not distributed in an arbitrary but highly constrained fashion.
 
-To account for the complex agreement patterns, Kalin argues that it is necessary to analyze agreement as consisting of three distinct operations that occur at different points of the derivation. `Match' takes place in syntax and establishes a connection between a probe and a goal based on an unvalued feature on the probe. `Value' in the early post-syntax then copies a values from the goal to the probe and `Vocabulary Insertion' in the late post-syntax then provides the phonetic exponent. Combined with a slightly revised version of the Activity Condition, Kalin derives the different possible agreement patterns in Senaya, strongly suggesting that Agree should not be treated as a unified operation.
+To account for the complex agreement patterns, Kalin argues that it is necessary to analyze agreement as consisting of three distinct operations that occur at different points of the derivation. ``Match'' takes place in syntax and establishes a connection between a probe and a goal based on an unvalued feature on the probe. ``Value'' in the early post-syntax then copies a values from the goal to the probe and ``Vocabulary Insertion'' in the late post-syntax then provides the phonetic exponent. Combined with a slightly revised version of the Activity Condition, Kalin derives the different possible agreement patterns in Senaya, strongly suggesting that Agree should not be treated as a unified operation.
 
 \subsection{Maru\v{s}i\v{c} and Nevins}
 \label{sec:mandn}
 
-Lanko Marušič and Andrew Nevins investigate gender agreement in ‘sandwiched’ configurations in Slovenian, where a coordinated noun phrase is located between two agreeing participles. The authors make two claims arguing that (i) the two participles may differ in phi-features with the effect that they probe independently of each other; (ii) agreement shows linear order effects, which can be captured by assuming that \textsc{Agree-Copy}, the second operation in the two-step agreement theory outlined in \citet{arreginevins2012}, may apply after linearization, hence at PF. The paper presents results from an acceptability judgement study. The results show that sandwiched agreement follows exactly the same patterns as preverbal and postverbal subject agreement in non-sandwiched configurations. The available patterns are closest and highest conjunct agreement on the higher probe, and closest, highest, and default agreement on the lower probe. Other, logically possible options are not available. The results are statistically compared providing comparisons between certain pairs of conditions. The authors reach the conclusion that placing \textsc{Agree-Copy} in PF makes the surface order in sandwiched configurations all that matters for determining double or highest conjunct agreement by the second participle, in terms of two derivational choices: (i) whether default agreement is chosen, and (ii) whether \textsc{Agree-Copy} precedes or follows linearization.
+Lanko Marušič and Andrew Nevins investigate gender agreement in ``sand-\linebreak wiched'' configurations in Slovenian, where a coordinated noun phrase is located between two agreeing participles. The authors make two claims arguing that (i)~the two participles may differ in phi-features with the effect that they probe independently of each other; (ii) agreement shows linear order effects, which can be captured by assuming that \textsc{Agree-Copy}, the second operation in the two-step agreement theory outlined in \citet{arreginevins2012}, may apply after linearization, hence at PF. The paper presents results from an acceptability judgement study. The results show that sandwiched agreement follows exactly the same patterns as preverbal and postverbal subject agreement in non-sandwiched configurations. The available patterns are closest and highest conjunct agreement on the higher probe, and closest, highest, and default agreement on the lower probe. Other, logically possible options are not available. The results are statistically compared providing comparisons between certain pairs of conditions. The authors reach the conclusion that placing \textsc{Agree-Copy} in PF makes the surface order in sandwiched configurations all that matters for determining double or highest conjunct agreement by the second participle, in terms of two derivational choices: (i) whether default agreement is chosen, and (ii) whether \textsc{Agree-Copy} precedes or follows linearization.
 
 
 \subsection{Van der Wal}
 \label{sec:vdwal}
 
-Jenneke van der Wal argues that object marking in Bantu languages involves an Agree Relation between a probe on a lower functional head (v, APPL) and a defective goal. She offers an account for the AWSOM correlation, which establishes an interdependence between type and number of object markers allowed on the verb. Concerning type, Bantu languages either mark only the highest object (asymmetric languages) or they mark any object (symmetric languages) on the verb. Concerning number, some languages only allow the highest object to appear on the verb, others allow several object markers to co-occur. The AWSOM correlation states that asymmetric languages want single object marking. Languages with multiple object markers are overwhelmingly symmetric. In accounting for this correlation, van der Wal assumes that the distribution of phi features is parameterized in that the multiple object markers of the symmetric languages are indicative of additional sets of uninterpretable phi features on the lower clausal heads. A typological exception to the AWSOM correlation is represented by Sambaa, a language which is asymmetric but has multiple object markers. It is assumed that Sambaa has multiple sets of phi features as well, the asymmetric behavior resulting from the fact that both probes are located on v. 
+Jenneke van der Wal argues that object marking in Bantu languages involves an Agree Relation between a probe on a lower functional head (v, APPL) and a defective goal. She offers an account for the AWSOM correlation, which establishes an interdependence between type and number of object markers allowed on the verb. Concerning type, Bantu languages either mark only the highest object (asymmetric languages) or they mark any object (symmetric languages) on the verb. Concerning number, some languages only allow the highest object to appear on the verb, others allow several object markers to co-occur. The AWSOM correlation states that asymmetric languages want single object marking. Languages with multiple object markers are overwhelmingly symmetric. In accounting for this correlation, van der Wal assumes that the distribution of phi-features is parameterized in that the multiple object markers of the symmetric languages are indicative of additional sets of uninterpretable phi features on the lower clausal heads. A typological exception to the AWSOM correlation is represented by Sambaa, a language which is asymmetric but has multiple object markers. It is assumed that Sambaa has multiple sets of phi features as well, the asymmetric behavior resulting from the fact that both probes are located on v. 
 
 \subsection{D'Alessandro}
 \label{sec:dalessandro}
 
-In her contribution, Roberta D'Alessandro discusses agreement in Ripano, an Italo-Romance variety spoken in Ripatransone, in central Italy. Several occurrences of agreement set it apart from other Romance languages/varieties. Focussing on all the elements that can show $\phi$-feature agreement first, it quickly becomes clear that Ripano is an unusual variety, as adverbs, prepositions, nouns, gerunds and and infinitives can all show agreement. This agreement, however, is not determined by the subject, but, as D'Alessandro argues, by a topical element in the clause. While topic-oriented agreement is not uncommon for languages/varieties in this area, the extent to which the $\phi$-features of the topic spread to the different elements just mentioned is exceptional. In addition to being topic-oriented, the second crucial assumption for the analysis of agreement in Ripano is the presence of an additional set of $\phi$-features ($\pi$ in D'Alessandro's notation) that can be merged on different, parametrically determined elements \citep{DAlessandro2017}, which can also be observed in other languages. In Ripano, this extra set of $\phi$-features is bundled with a $\delta$-feature, more specifically a topic feature \citep{Miyagawa2017}, which forces agreement based on this extra set of $\phi$-features to be topic-oriented.
+In her contribution, Roberta D'Alessandro discusses agreement in Ripano, an Italo-Romance variety spoken in Ripatransone, in central Italy. Several occurrences of agreement set it apart from other Romance languages/varieties. Focussing on all the elements that can show $\phi$-feature agreement first, it quickly becomes clear that Ripano is an unusual variety, as adverbs, prepositions, nouns, gerunds and and infinitives can all show agreement. This agreement, however, is not determined by the subject, but, as D'Alessandro argues, by a topical element in the clause. While topic-oriented agreement is not uncommon for languages/varieties in this area, the extent to which the $\phi$-features of the topic spread to the different elements just mentioned is exceptional. In addition to being topic-oriented, the second crucial assumption for the analysis of agreement in Ripano is the presence of an additional set of $\phi$-features (``$\pi$'' in D'Alessandro's notation) that can be merged on different, parametrically determined elements \citep{DAlessandro2017}, which can also be observed in other languages. In Ripano, this extra set of $\phi$-features is bundled with a $\delta$-feature, more specifically a topic feature \citep{Miyagawa2017}, which forces agreement based on this extra set of $\phi$-features to be topic-oriented.
 
 
 \subsection{Mursell}
@@ -495,7 +507,7 @@ In LDA, matrix and embedded verb are thus actually merged as a complex predicate
 
 Michael Diercks, Marjo van Koppen, and Michael Putnam engage the general question of the directionality of agreement and argue based on complementizer agreement that Agree should generally be downwards and that cases of apparent upwards agreement are actually composite operations that involve an initial movement step.
 
-They focus on complementizer agreement in Lubukusu, in which the $\phi$-features of the complementizer introducing the embedded clause are valued by the subject of the matrix clause. This stands in stark contrast to complementizer agreement in Germanic languages, where the  $\phi$-features of the complementizer are valued by the embedded subject, and provides an apparent counter-example to the claim that agreement always probes downward. To account for this pattern, the authors assume that complementizer agreement in Lubukusu involves anaphoric feature valuation, which in turn always involves a movement step of the anaphor to the edge of the vP, from where it c-commands the subject.
+They focus on complementizer agreement in Lubukusu, in which the $\phi$-fea\-tures of the complementizer introducing the embedded clause are valued by the subject of the matrix clause. This stands in stark contrast to complementizer agreement in Germanic languages, where the  $\phi$-features of the complementizer are valued by the embedded subject, and provides an apparent counter-example to the claim that agreement always probes downward. To account for this pattern, the authors assume that complementizer agreement in Lubukusu involves anaphoric feature valuation, which in turn always involves a movement step of the anaphor to the edge of the vP, from where it c-commands the subject.
 
 Based on this, the authors formulate a principle, the PAPA (Principle for Anaphoric Properties of Agreement) that states that anaphoric (interpretable, unvalued) $\phi$-features always need to move to the edge of the vP. The reasons for the existence of this principle are then extensively discussed, and related to the assumption that phasal reference can be increased if phase internal elements are moved to its edge \citep{HinzenSheehan2013}. Thus, the paper does not only engage in the discussion of the fundamental properties of \agr{}, but also contributes to the study of phases and their properties.
 
@@ -506,7 +518,7 @@ Based on this, the authors formulate a principle, the PAPA (Principle for Anapho
 Thomas McFadden studies patterns of allocutive agreement in Tamil.
 Allocutive agreement refers to the phenomenon where agreement on the verb references properties of the addressee, and in Tamil, whether the addressee should be spoken to with the polite form or not.
 Allocutive agreement, as shown by McFadden, provides evidence that features of the addressee should be represented in the syntactic structure.
-After outlining the properties of allocutive agreement in more detail than has been done in previous literature, and establishing that it is a genuine case of agreement --- rather than, say, vocativity --- McFadden argues that the features of and other information relating to the speech act participants are held on Speech Act Phrases high in the clausal spine, above ForceP.
+After outlining the properties of allocutive agreement in more detail than has been done in previous literature, and establishing that it is a genuine case of agreement -- rather than, say, vocativity -- McFadden argues that the features of and other information relating to the speech act participants are held on Speech Act Phrases high in the clausal spine, above ForceP.
 Allocutive agreement represents a functional head between T and Force undergoing agreement with those features.
 Finally, McFadden discusses the interaction of allocutive agreement with the phenomenon of monstrous agreement in Tamil \citep{sundaresan2012}, whereby agreement in an embedded context (where the embedded subject is an anaphor) reflects the features of the subject of the same speech act and not those of the speech act of the overall utterance.
 McFadden shows that in case of monstrous agreement, allocutive agreement in the lower clause must reflect the relationship of the author of the embedded speech act to the addressee \emph{of that same speech act}, and not the addressee of the overall speech act.
@@ -521,24 +533,28 @@ Starting out from the by-now traditional view that anaphors are $\phi$-deficient
 
 To account for a variety of observable behavior of anaphors, Sundaresan proposes a more articulated feature system that adds the privative feature [\textsc{sentience}] to the binary features of [\textsc{author}] and [\textsc{addressee}]. This complex feature system, together with the [\textsc{dep}] feature from \citet{sundaresan2012} to derive perspective sensitivity, is then shown to be able to derive the various kinds of anaphors discussed in the paper without any additional assumptions for the underlying agreement process.
 
-\newpage
 \section*{Abbreviations}
 
 Arabic numerals not followed by \textsc{sg} or \textsc{pl} refer to noun classes.
 
-\begin{multicols}{2}
+\begin{multicols}{3}
 	\begin{tabbing}
 \textsc{expl}\hspace{5mm} \= Expletive\kill
-		\textsc{abs} 	\> Absolutive \\		 	\textsc{o} \> Object 	\\
-		\textsc{dat} 	\> Dative	\\		 \textsc{pl} \> Plural	\\
-		\textsc{expl} 	\> Expletive \\		 \textsc{pres} \> Present	\\
-		\textsc{fv} 	\> Final Vowel	\\ 	 \textsc{pst} \> Past	\\
-		\textsc{loc} 	\> Locative \\			 \textsc{s} \> Subject	\\
-		\textsc{neg} 	\> Negation \\			 \textsc{sg} \> Singular\\
+		\textsc{abs} 	\> Absolutive \\
+		\textsc{dat} 	\> Dative	\\
+		\textsc{expl} 	\> Expletive \\
+		\textsc{fv} 	\> Final Vowel	\\
+		\textsc{loc} 	\> Locative \\
+		\textsc{neg} 	\> Negation \\
 		\textsc{nom} 	\> Nominative 	\\	
+		\textsc{o} \> Object 	\\
+		\textsc{pl} \> Plural	\\
+		\textsc{pres} \> Present	\\
+		\textsc{pst} \> Past	\\
+		\textsc{s} \> Subject	\\
+		\textsc{sg} \> Singular\\
 \end{tabbing}
 \end{multicols}
 
-\printbibliography[heading=subbibliography,notkeyword=this]
-
+{\sloppy\printbibliography[heading=subbibliography,notkeyword=this]}
 \end{document}
