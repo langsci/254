@@ -709,26 +709,16 @@ Putting aside the lack of obvious independent evidence for different structures,
 
 \noindent One ingredient that can help us begin to account for the three agreement variants via the syntax is to posit that the matrix subject position of a progressive can either be filled by a lexical subject or a null expletive subject. When this position is filled by a lexical subject, the auxiliary agrees with it, (\ref{SOStrans}), yielding the \textsc{sbj-obj-sbj}, (\ref{prog2}), variant.
 	
-	\begin{exe}
-		\ex \label{SOStrans} \tikzstyle{every picture}+=[remember picture, inner sep=0pt, baseline, anchor=base]%
-		[ \tikz\node(SUBJ){SBJ\sub{i}}; \tikz\node(T-up){V+\textit{v}+Asp+T}; [ \sout{Asp} [ \sout{\textit{v}} [ \sout{V} [ \tikz\node(T-low){T}; [ \tikz\node(Asp-low){V+\textit{v}+Asp}; [ \tikz\node(PRO){PRO\sub{i}}; [ \sout{\textit{v}} [ \sout{V} \tikz\node(OBJ){OBJ}; ]]]]]]]]]
-		\begin{tikzpicture}[overlay]
-		\draw [semithick,dashed,->] (T-up.north) -- ++(north:2.2ex) -| (SUBJ.north);
-		\draw [semithick,dashed,->] (T-low.north) -- ++(north:2.2ex) -| (OBJ.north);
-		\draw [semithick,dashed,->] (Asp-low.north) -- ++(north:1.5ex) -| (PRO.north);
-		\end{tikzpicture}
-	\end{exe}
+\begin{exe}
+		\ex \label{SOStrans}\relax
+		[ \ConnectDashTail{SBJ\sub{i}} \ \ConnectDashHead*{V+\textit{v}+Asp+T}\relax\  [ \sout{Asp} [ \sout{\textit{v}} [ \sout{V} [ \ConnectDashTail{T}[A]\relax\  [ \ConnectDashTail{V+\textit{v}+Asp}[B]\relax\  [ \ConnectDashHead{PRO\sub{i}}[B]\relax\  [ \sout{\textit{v}} [ \sout{V} \ConnectDashHead[2ex]{OBJ}[A]\relax ]]]]]]]]]
+\end{exe}
 	
 \noindent When this position is filled by an expletive subject, the auxiliary agrees with the expletive, (\ref{SODtrans}),  yielding default agreement (or potentially true agreement with the expletive, assuming it is third person singular); this derives the \textsc{sbj-obj-dflt}, (\ref{prog3}), variant.
 
 	\begin{exe}
-		\ex \label{SODtrans} \tikzstyle{every picture}+=[remember picture, inner sep=0pt, baseline, anchor=base]%
-		[ \tikz\node(EXPL){EXPL}; \tikz\node(T-up){V+\textit{v}+Asp+T}; [ \sout{Asp} [ \sout{\textit{v}} [ \sout{V} [ \tikz\node(T-low){T}; [ \tikz\node(Asp-low){V+\textit{v}+Asp}; [ \tikz\node(SUBJ-low){SUBJ}; [ \sout{\textit{v}} [ \sout{V} \tikz\node(OBJ){OBJ}; ]]]]]]]]]
-		\begin{tikzpicture}[overlay]
-		\draw [semithick,dashed,->] (T-up.north) -- ++(north:2.2ex) -| (EXPL.north);
-		\draw [semithick,dashed,->] (T-low.north) -- ++(north:2.2ex) -| (OBJ.north);
-		\draw [semithick,dashed,->] (Asp-low.north) -- ++(north:1.5ex) -| (SUBJ-low.north);
-		\end{tikzpicture}
+		\ex \label{SODtrans}\relax
+		[ \ConnectDashTail{EXPL}\ \ConnectDashHead*{V+\textit{v}+Asp+T}\relax\ [ \sout{Asp} [ \sout{\textit{v}} [ \sout{V} [ \ConnectDashTail{T}[A]\relax\ [ \ConnectDashTail{V+\textit{v}+Asp}[B]\relax\ [ \ConnectDashHead{SUBJ}[B]\relax\ [ \sout{\textit{v}} [ \sout{V} \ConnectDashHead[2ex]{OBJ}[A]\relax ]]]]]]]]]
 	\end{exe}
 	
 \noindent So far, this seems like a sensible way to go, as the progressive matrix verb (arguably) need not assign its own theta role/introduce its own argument.
@@ -740,13 +730,8 @@ Turning now to the third agreement pattern, \textsc{sbj-dflt-obj} (\ref{prog4}),
 An alternative analysis of the third agreement variant, \textsc{sbj-dflt-obj} (\ref{prog4}), is to posit that the object moves over the subject, and there is subsequent agreement with the object in its high position, (\ref{SDOtrans}).
 
 	\begin{exe}
-		\ex \label{SDOtrans} \tikzstyle{every picture}+=[remember picture, inner sep=0pt, baseline, anchor=base]%
-		[ \tikz\node(OBJ-up-l){OB};\tikz\node(OBJ-up-r){J}; \tikz\node(T-up){V+\textit{v}+Asp+T}; [ \sout{Asp} [ \sout{\textit{v}} [ \sout{V} [ \tikz\node(T-low){T}; [ \tikz\node(Asp-low){V+\textit{v}+Asp}; [ \tikz\node(SUBJ-low){SUBJ}; [ \sout{\textit{v}} [ \sout{V} \tikz\node(OBJ-low){\sout{OBJ}}; ]]]]]]]]]
-		\begin{tikzpicture}[overlay]
-		\draw [semithick,dashed,->] (T-up.north) -- ++(north:1.5ex) -| (OBJ-up-r.north); %OBJ-l/r so that the arrows are distinct
-		\draw [semithick,->] (OBJ-low.north) -- ++(north:2.2ex) -| (OBJ-up-l.north);
-		\draw [semithick,dashed,->] (Asp-low.north) -- ++(north:1.5ex) -| (SUBJ-low.north);
-		\end{tikzpicture}
+		\ex \label{SDOtrans}\relax
+		[ \ConnectTail{OB}[A]\ConnectDashTail{J}[B]\relax\ \ConnectDashHead*{V+\textit{v}+Asp+T}[B]\relax\ [ \sout{Asp} [ \sout{\textit{v}} [ \sout{V} [ T [ \ConnectDashTail{V+\textit{v}+Asp}[C]\relax\ [ \ConnectDashHead{SUBJ}[C] [ \sout{\textit{v}} [ \sout{V} \ConnectHead*[2ex]{\sout{OBJ}}[A]\relax ]]]]]]]]]
 	\end{exe}
 
 \noindent Apart from the minimality violation that this would entail, this analysis again raises the question of why it should be that a third person object can raise, while a first/second person object cannot. This account also does not help us understand why there is default agreement on the imperfective verb base in these cases. Finally, as Senaya does not even have a productive passive construction, nor does the object c-command the subject in these progressives, positing that one of the progressive variants is derived via some sort of passivization (promotion of the object) is a non-starter.
