@@ -28,9 +28,9 @@ In \citet{Chomsky1995}, it was argued that, in every instance of Merge, the sele
 \begin{exe}
 \ex Head–complement configurations \label{ex-zeijlstra:2}
 	\xlist
-	\ex {[} \textsubscript{V'} {[}V DP{]}{]} \label{ex-zeijlstra:2a}
-	\ex {[} \textsubscript{D'} {[}D NP{]}{]} \label{ex-zeijlstra:2b}
-	\ex {[} \textsubscript{P'} {[}P DP{]}{]} \label{ex-zeijlstra:2c}
+	\ex {[}\textsubscript{V'} {[}V DP{]}{]} \label{ex-zeijlstra:2a}
+	\ex {[}\textsubscript{D'} {[}D NP{]}{]} \label{ex-zeijlstra:2b}
+	\ex {[}\textsubscript{P'} {[}P DP{]}{]} \label{ex-zeijlstra:2c}
 	\endxlist
 \end{exe}
 In (\ref{ex-zeijlstra:2a}), the verb’s theta-grid selects an internal argument; hence V (or, to be more precise, the feature {[}V{]}), having merged with DP (or more precisely, an element carrying [D]), has its theta-requirement satisfied, and thus projects up to the top node (yielding a feature {[}V{]} at the top node). Similarly, in (\ref{ex-zeijlstra:2b}), D selects for an NP-complement, and in (\ref{ex-zeijlstra:2c}), P selects for a DP-complement. Since V, D, and P are the selectors, V, D, and P (or, to be more precise, the {[}V{]}, {[}D{]} and {[}P{]} features) percolate up.
@@ -40,8 +40,8 @@ A major advantage of such a labeling mechanism is that it is not restricted to h
 \begin{exe}
 	\ex Specifier–head–complement configurations \label{ex-zeijlstra:3}
 	\xlist
-	\ex {[} \textsubscript{vP} DP{[} \textsubscript{v'} v VP{]}{]} \label{ex-zeijlstra:3a}
-	\ex {[} \textsubscript{TP}{[} \textsubscript{T'} T vP{]}{]} \label{ex-zeijlstra:3b}
+	\ex {[}\textsubscript{vP} DP {[}\textsubscript{v'} v VP{]}{]} \label{ex-zeijlstra:3a}
+	\ex {[}\textsubscript{TP} {[}\textsubscript{T'} T vP{]}{]} \label{ex-zeijlstra:3b}
 	\endxlist
 \end{exe}
 In (\ref{ex-zeijlstra:3a}), v first merges with VP and then this merger merges with DP (in the specifier position). Since it is v that selects both its VP-complement and its DP-specifier, it is v that projects in both cases. In cases of Internal Merge, the same principle applies. In (\ref{ex-zeijlstra:3b}), T selects for a verbal complement (either vP or VP) and for a DP in its specifier position. Since T’s selectional requirements have been met by means of External Merge with vP and Internal Merge with DP, the label of the entire constituent is again T.
@@ -68,7 +68,7 @@ Second, even though the original proposal can handle labeling of both head–com
 
 \begin{exe}
 \ex Adjunction \label{ex-zeijlstra:5} \\
-	{[} \textsubscript{X-MAX} YP{[} \textsubscript{X-MAX} XP{]}{]}
+	{[}\textsubscript{X-MAX} YP {[}\textsubscript{X-MAX} XP{]}{]}
 \end{exe}
 For these and other reasons, adjuncts are often left out of the core structure of sentences, and are said to undergo late merger (cf. \citealt{Lebeaux1988}) or not to establish regular mergers with their modifiees (cf. \citealt{Chomsky2001}; \citealt{Hornstein_Nunes2009}). This way, their unexpected phrasal status no longer forms a problem for the general labeling algorithm, but, of course, the question is left open as to what generates the label of an adjunct and its sister, and why adjuncts are exceptional in this sense.
 
@@ -137,16 +137,10 @@ In order to see whether a principled mechanism is available where features can p
 \ex \hspace{1.5cm} Formal Features \hspace{0.8cm} Semantic Features \label{ex-zeijlstra:10} \\
 \begin{tikzpicture}
 \draw (2,2) ellipse (3cm and 1cm);
-\node [right] at (1,2) {\huge{\textbf{.}}};
-\node [right] at (3.4,2) {\huge{\textbf{.}}};
+\node [right] at (1,2) {{[}uF{]}};
+\node [right] at (3.1,2) {{[}iF{]}};
 \draw (5,2) ellipse (3cm and 1cm);
-\node [right] at (6,2) {\huge{\textbf{.}}};
-\draw [black] (1.23,1.8) -- (1.23,.8);
-\node [below] at (1.3,0.2) {{[}uF{]}};
-\draw [black] (3.61,1.8) -- (3.61,.8);
-\node [below] at (3.6,0.2) {{[}iF{]}};
-\draw [black] (6.22,1.8) -- (6.22,.8);
-\node [below] at (6.25,0.2) {{[}S{]}};
+\node [right] at (5.2,2) {{[}S{]}};
 \end{tikzpicture}
 \end{exe} \vspace{-0.5cm}
 \end{figure}
@@ -155,16 +149,10 @@ In order to see whether a principled mechanism is available where features can p
 \ex \hspace{1.5cm} Formal Features \hspace{2.5cm} Semantic Features \label{ex-zeijlstra:11}\\ 
 \begin{tikzpicture}[scale=0.9]
 \draw (2,2) ellipse (3cm and 1cm);
-\node [right] at (0.5,2) {\huge{\textbf{.}}};
-\node [right] at (2.78,2) {\huge{\textbf{.}}};
-\draw [black] (0.73,1.8) -- (0.73,.8);
+\node [right] at (0.5,2) {{[}uF{]}};
+\node [right] at (2.78,2) {{[}iF{]}};
 \draw (8.3,2) ellipse (3cm and 1cm);
-\node [right] at (8,2) {\huge{\textbf{.}}};
-\node [below] at (0.75,0.2) {{[}uF{]}};
-\draw [black] (3,1.8) -- (3,.8);
-\node [below] at (3.05,0.2) {{[}iF{]}};
-\draw [black] (8.23,1.8) -- (8.23,.8);
-\node [below] at (8.28,0.2) {{[}S{]}};
+\node [right] at (8,2) {{[}S{]}};
 \end{tikzpicture}
 \end{exe} \vspace{-0.8cm}
 \end{figure}
@@ -245,7 +233,7 @@ In (\ref{ex-zeijlstra:18a}), v contains two selecting uninterpretable features, 
 
 As discussed in \sectref{sec-zeijlstra:1.2}, now the question naturally arises as to what determines that v first merges with VP (or T with vP) and only then with DP? Why wouldn’t or couldn’t the orderings be the reverse? However, in order to answer that question, it should first be determined whether this problem should be solved within a labeling algorithm at all.
 
-At first sight, there appear to be two kinds of solutions to this problem. The first solution would be to impose an ordering on the selecting features, for instance by assigning ordering diacritics (\{[uV]\}\textsubscript{1}, \{[uD]\}\textsubscript{2}), or to think of features sets as being ordered (\textsubscript{<}\{[uV]\}, \{[uD]\}\textsubscript{>}). The alternative solution would be to say that syntax can deliver both orders. In that case, both [\textsubscript{TP} DP [\textsubscript{T’} T vP]] and [\textsubscript{TP} vP [\textsubscript{T’} T DP]] should be syntactically fine, but only the first, and not the second, can receive a semantic interpretation. Under this view, syntax overgenerates, and the interfaces filter out unwanted structures. Each solution has its benefits, but also comes with clear disadvantages. Ordering solutions require extra complications in the mechanics of the system (either novel subfeatures, or more complex rules of feature percolation). Interface solutions have to allude to existing semantic or phonological modes of interpretation that rule out the unwanted structures, and it is far from clear whether, for every unwanted structure, a semantic\slash phonological solution is available. For the selection by functional heads, a semantic solution, arguably, is available, as these are in general the result of grammaticalized scopal relations, but in other cases, semantics and\slash or phonology may not be able to rule out such reverse merger orderings. Note, though, that it is also possible that certain reverse orderings are ruled out for syntax-internal reasons. For instance, if in (\ref{ex-zeijlstra:18}) DP were the complement of v/T and VP/vP its specifier, V-to-v, or v-to-T movement would be forbidden as the target head position (v or T) would not c-command the base positon of the adjoined head (V or v).
+At first sight, there appear to be two kinds of solutions to this problem. The first solution would be to impose an ordering on the selecting features, for instance by assigning ordering diacritics (\{[uV]\}\textsubscript{1}, \{[uD]\}\textsubscript{2}), or to think of features sets as being ordered ($\langle$\{[uV]\}, \{[uD]\}$\rangle$). The alternative solution would be to say that syntax can deliver both orders. In that case, both [\textsubscript{TP} DP [\textsubscript{T’} T vP]] and [\textsubscript{TP} vP [\textsubscript{T’} T DP]] should be syntactically fine, but only the first, and not the second, can receive a semantic interpretation. Under this view, syntax overgenerates, and the interfaces filter out unwanted structures. Each solution has its benefits, but also comes with clear disadvantages. Ordering solutions require extra complications in the mechanics of the system (either novel subfeatures, or more complex rules of feature percolation). Interface solutions have to allude to existing semantic or phonological modes of interpretation that rule out the unwanted structures, and it is far from clear whether, for every unwanted structure, a semantic\slash phonological solution is available. For the selection by functional heads, a semantic solution, arguably, is available, as these are in general the result of grammaticalized scopal relations, but in other cases, semantics and\slash or phonology may not be able to rule out such reverse merger orderings. Note, though, that it is also possible that certain reverse orderings are ruled out for syntax-internal reasons. For instance, if in (\ref{ex-zeijlstra:18}) DP were the complement of v/T and VP/vP its specifier, V-to-v, or v-to-T movement would be forbidden as the target head position (v or T) would not c-command the base positon of the adjoined head (V or v).
 
 However, before further evaluating these two types of solutions, let’s first look at what kind of empirical predictions they make. Ordering solutions require that reverse selectional orderings may never take place. Interface solutions predict that, when two different orderings are semantically or phonologically non-anomalous, both should be fine. This gives the interface solution a step ahead: if it turns out that such flexible orderings do exist, the ordering solution can already be discarded, and the absence of structures like [\textsubscript{TP} vP [\textsubscript{T’} T DP]] or [\textsubscript{vP} VP [\textsubscript{v’} v DP]] should, in turn, be semantically or phonologically ruled out. In \sectref{sec-zeijlstra:3.3}, I show that such flexible orderings can indeed be attested.
 
@@ -374,6 +362,8 @@ However, under the assumption that a predicate must first merge with its argumen
 				[DP{=}\{{[}D{]}\}\\ \textit{her parents}]
 				] ] ] 
 		\end{forest}
+		\end{exe}
+		\begin{exe}
         \ex\label{ex-zeijlstra:28}
 			\begin{forest}	for tree={align=center}
 				[VP{=}\{{[}V{]}\}
@@ -386,7 +376,7 @@ However, under the assumption that a predicate must first merge with its argumen
 \noindent Note that now the proposal reinstalls c-selection for DP/CP-arguments, while having PP-arguments distinguished in syntax as well (the difference between a PP argument and a PP adjunct is that the former, but not the latter is immediately dominated by a feature [uD]), even though PPs always select their sisters rather than being selected by them.
 
 \subsection{Multiple arguments} \label{sec-zeijlstra:3.5}
-As shown in the discussion of \xxref{ex-zeijlstra:27}{ex-zeijlstra:28}, the subject appears to be selected by the [uD]-feature on the verb. This seems too naïve, though, given that \textit{count} is an unergative verb and \textit{Mary} an external argument. The solution to this problem, however, is part of a more general concern, namely that, under the current version of the proposal, a verb is unable to select more than two DP-arguments. The reason is that, if feature sets that constitute categories are unordered, no feature set can contain more than one [uD]-feature: \{[V]\}, [uD], [uD]\} is formally the same as \{[V]\}, [uD]\} (as every set \{a,a\} is formally identical to \{a\}).
+As shown in the discussion of (\ref{ex-zeijlstra:27})-(\ref{ex-zeijlstra:28}), the subject appears to be selected by the [uD]-feature on the verb. This seems too naïve, though, given that \textit{count} is an unergative verb and \textit{Mary} an external argument. The solution to this problem, however, is part of a more general concern, namely that, under the current version of the proposal, a verb is unable to select more than two DP-arguments. The reason is that, if feature sets that constitute categories are unordered, no feature set can contain more than one [uD]-feature: \{[V]\}, [uD], [uD]\} is formally the same as \{[V]\}, [uD]\} (as every set \{a,a\} is formally identical to \{a\}).
 
 The solution to this problem is straightforward and goes back to \citet{Larson1988},  \citet{Hale_Keyser1993}, and \citet{Kratzer1996}, who argue that different arguments are selected (or theta-role assigned) by different verbal heads in a layered vP. The structure of a transitive verb, like \textit{kiss}, would then be: 
 
@@ -403,7 +393,7 @@ The solution to this problem is straightforward and goes back to \citet{Larson19
 				] ] ] 
 		\end{forest}
 	\end{exe}
-\noindent The introduction of an extra DP-selecting head, a pure transitivizer, now follows naturally; without it, no second argument could merge with a verb into the syntactic structure. Just as in other syntactic approaches, the usual verb types can now be derived. Unaccusative verbs are feature sets \{[V], [uD]\}, where the internal argument starts out as an object. Transitive verbs are as in (\ref{ex-zeijlstra:29}), with both v and V selecting one DP-argument each. Unergative verbs, finally, could be analyzed in two ways, as illustrated in \xxref{ex-zeijlstra:30}{ex-zeijlstra:31}. Either only v and V carries a [uD] feature, as in (\ref{ex-zeijlstra:30}), or both v and V carry a [uD] feature that is jointly checked off by the subject (as percolation of a [uD] feature from v and V yields only one [uD] on the top node v: \{[v], [uD], [uD]\} = \{[v], [uD]\}, as in (\ref{ex-zeijlstra:31}).
+\noindent The introduction of an extra DP-selecting head, a pure transitivizer, now follows naturally; without it, no second argument could merge with a verb into the syntactic structure. Just as in other syntactic approaches, the usual verb types can now be derived. Unaccusative verbs are feature sets \{[V], [uD]\}, where the internal argument starts out as an object. Transitive verbs are as in (\ref{ex-zeijlstra:29}), with both v and V selecting one DP-argument each. Unergative verbs, finally, could be analyzed in two ways, as illustrated in (\ref{ex-zeijlstra:30})-(\ref{ex-zeijlstra:31}). Either only v and V carries a [uD] feature, as in (\ref{ex-zeijlstra:30}), or both v and V carry a [uD] feature that is jointly checked off by the subject (as percolation of a [uD] feature from v and V yields only one [uD] on the top node v: \{[v], [uD], [uD]\} = \{[v], [uD]\}, as in (\ref{ex-zeijlstra:31})).
 
 	\begin{exe}
 		\ex\label{ex-zeijlstra:30}
@@ -460,8 +450,8 @@ The assumptions made so far provide a solution for most challenges to labeling a
 \begin{exe}
 \ex PP-modification \label{ex-zeijlstra:33}
 	\xlist
-	\ex {[}\textsubscript{VP}[\textsubscript{VP} \textit{meet Mary} [\textsubscript{PP} \textit{in the park}]{]} \label{ex-zeijlstra:33a}
-	\ex {[}\textsubscript{NP}[\textsubscript{NP} \textit{man} [\textsubscript{PP} \textit{in the park}]{]}
+	\ex {[}\textsubscript{VP} [\textsubscript{VP} \textit{meet Mary} [\textsubscript{PP} \textit{in the park}]{]} \label{ex-zeijlstra:33a}
+	\ex {[}\textsubscript{NP} [\textsubscript{NP} \textit{man} [\textsubscript{PP} \textit{in the park}]{]}
 	\ex {[}\textsubscript{AP} \textit{afraid} [\textsubscript{PP} \textit{of the doctor}]{]}
 	\endxlist
 \end{exe}
