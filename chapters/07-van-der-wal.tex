@@ -714,13 +714,8 @@ The question is thus why the second Probe can only reach the Theme if the first 
 
 \begin{figure}
 \caption{Agree with a defective (a) and non-defective (b) Benefactive goal\label{fig:vdw:3}}
-\begin{multicols}{2}\raggedcolumns
-a. 
-% \label{ex-vdwal:30} 
-        \forestset{nice empty nodes/.style={for tree={calign=fixed edge angles}, delay={where content={}{shape=coordinate, for current and siblings={anchor=north}}{}}
-			},
-		}
-		\begin{forest}	for tree={align=center}
+\begin{minipage}[t]{.5\textwidth}
+a. \begin{forest}	for tree={align=center}
 			[, nice empty nodes
 			[v \\{[}u$\phi${]} {[}u$\phi${]} ]
 			[ApplP 
@@ -733,13 +728,8 @@ a.
 			] ] ] ]	
 			\draw[->, thick,overlay] (-1.4,-2.4) to [out=south west,in=south] (TH);	
 			\draw[->, thick,overlay] (-0.6,-2.4) to [out=south west,in=south west] (-0.2,-3.8);
-	\end{forest}\columnbreak
-	b. 
-% 	\label{ex-vdwal:31} 
-    \forestset{nice empty nodes/.style={for tree={calign=fixed edge angles}, delay={where content={}{shape=coordinate, for current and siblings={anchor=north}}{}}
-			},
-		}
-		\begin{forest}	for tree={align=center}
+	\end{forest}\end{minipage}\begin{minipage}[t]{.5\textwidth}
+	b. \begin{forest}	for tree={align=center}
 			[, nice empty nodes
 			[v \\{[}u$\phi${]} {[}u$\phi${]} ]
 			[ApplP 
@@ -754,8 +744,8 @@ a.
 			\draw[->, thick,overlay] (-1.4,-2.4) to [out=south west,in=south] (-0.2,-3.8);	
 			\draw[-, thick ,overlay] (-0.6,-2.4) to [out=south west,in=south west] (-0.2,-3.9);
 			\node[below=\baselineskip of TH] (phantom) {};			
-	\end{forest}\vfill
-\end{multicols}\end{figure}
+	\end{forest}
+\end{minipage}\end{figure}
 
 If, on the other hand, the first Probe agrees with a non-defective DP Benefactive, the DP will still be visible to the second Probe. The second Probe will thus also agree with the higher Recipient and cannot reach the lower Theme, as in \figref{fig:vdw:3}b. The (double set of the same) $\phi$ features on v will not be spelled out, because the Goal is not defective, resulting in no object marking.\largerpage[-2]
 
@@ -783,9 +773,9 @@ We may now wonder how the Theme is licensed if v does not agree with it in \figr
 	\end{forest}
 \end{figure}
 
-Recent theoretical proposals have highlighted mismatches between (morphological) case and $\phi$ agreement and shown them to be separate, as \citet{Bhatt2005}, \citet{Baker2008b,Baker2008a,Baker2012,Baker2015}, \citet{Bobaljik2008}, \citet{Barany2015}, \citet{StegovecTA} argue (contra \citealt{Chomsky2000, Chomsky2001} who views case and agreement as two sides of the same coin). Therefore, case and agreement “cannot be two realizations of the same abstract Agree relation” \citep[272 on Amharic]{Baker2012}. Baker takes this to be an argument in favour of morphological case not being determined by an Agree relation at all (instead following from a Dependent Case algorithm, \citealt{Marantz1991,Baker2015}), but it also points towards the independence of abstract Case and $\phi$ features \citep{Keine2010, Barany2015}. If u$\phi$ and Case are logically separate, then we can understand the unique situation of Sambaa. In all the other combinations of object marking parameters in \tabref{tab-vdwal:3} (page~\pageref{tab-vdwal:3}), Case and u$\phi$ operate together, and Case can be present by itself, but Sambaa (asymmetric multiple OM) presents the exceptional situation of a $\phi$ probe independent of a Case feature, as shown in \tabref{tab-vdwal:4}.\footnote{The symmetric single object marking type is discussed in \sectref{sec-vdwal:7}.}\largerpage[1.5]
+Recent theoretical proposals have highlighted mismatches between (morphological) case and $\phi$ agreement and shown them to be separate, as \citet{Bhatt2005}, \citet{Baker2008b,Baker2008a,Baker2012,Baker2015}, \citet{Bobaljik2008}, \citet{Barany2015}, \citet{StegovecTA} argue (contra \citealt{Chomsky2000, Chomsky2001} who views case and agreement as two sides of the same coin). Therefore, case and agreement “cannot be two realizations of the same abstract Agree relation” \citep[272 on Amharic]{Baker2012}. Baker takes this to be an argument in favour of morphological case not being determined by an Agree relation at all (instead following from a Dependent Case algorithm,\largerpage \citealt{Marantz1991,Baker2015}), but it also points towards the independence of abstract Case and $\phi$ features \citep{Keine2010, Barany2015}. If u$\phi$ and Case are logically separate, then we can understand the unique situation of Sambaa. In all the other combinations of object marking parameters in \tabref{tab-vdwal:3} (page~\pageref{tab-vdwal:3}), Case and u$\phi$ operate together, and Case can be present by itself, but Sambaa (asymmetric multiple OM) presents the exceptional situation of a $\phi$ probe independent of a Case feature, as shown in \tabref{tab-vdwal:4}.{\interfootnotelinepenalty=10000\footnote{The symmetric single object marking type is discussed in \sectref{sec-vdwal:7}.}}\newpage
 
-\begin{table}[bh]
+\begin{table}
 \caption{Featural distribution in 4 types of languages for symmetry and number of object markers} 
 \label{tab-vdwal:4}
 	\begin{tabularx}{\textwidth}{XXX} 
@@ -811,7 +801,7 @@ The derivation in Sambaa thus proceeds as follows. First, Appl licenses the Them
 
 With this analysis of a second $\phi$ probe on v, the second and third research questions can now be answered: Sambaa has multiple object marking because it has multiple sets of u$\phi$ features, and it is asymmetric because the second set of u$\phi$ features is located not on Appl but on v. Case licensing is still taken care of by both v and Appl, as in all other languages. This split between Case licensing and u$\phi$ features is rare, making Sambaa appear as an exception to the AWSOM correlation.
 
-The rarity of the split between Case and $\phi$ can potentially be understood from the point of view of acquisition. In order to set parameters and to discover the uninterpretable features in their language, acquirers need a certain amount of clear form-meaning correlations (see a.o. \citealt{Biberauer2017a,Biberauer2017b,Biberauer_Roberts2017,Fasanella_Fortuny2016}). In Bantu languages, morphology forms a strong clue to deduce the underlying structure and features. The mismatch between observed $\phi$ agreement and Case licensing would thus appear to be suboptimal for easy acquisition, explaining the tendency for Case and $\phi$ agreement to go together. This line of reasoning makes testable predictions for acquisition (on which we have no data whatsoever), as well as relative diachronic instability (where a comparison between earlier sources such as \citealt{Roehl1911} and \citealt{Riedel2009} could have given a small amount of time-depth, but Roehl does not provide conclusive data). I leave this for further research.\pagebreak
+The rarity of the split between Case and $\phi$ can potentially be understood from the point of view of acquisition. In order to set parameters and to discover the uninterpretable features in their language, acquirers need a certain amount of clear form-meaning correlations (see a.o. \citealt{Biberauer2017a,Biberauer2017b,Biberauer_Roberts2017,Fasanella_Fortuny2016}). In Bantu languages, morphology forms a strong clue to deduce the underlying structure and features. The mismatch between observed $\phi$ agreement and Case licensing would thus appear to be suboptimal for easy acquisition, explaining the tendency for Case and $\phi$ agreement to go together. This line of reasoning makes testable predictions for acquisition (on which we have no data whatsoever), as well as relative diachronic instability (where a comparison between earlier sources such as \citealt{Roehl1911} and \citealt{Riedel2009} could have given a small amount of time-depth, but Roehl does not provide conclusive data). I leave this for further research.
 
 \section{Two ways of being symmetric?} \label{sec-vdwal:7}
 
