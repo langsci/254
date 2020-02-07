@@ -3,6 +3,7 @@
 \renewcommand{\sectref}[1]{Section~\ref{#1}}
 \renewcommand{\lsChapterFooterSize}{\footnotesize}
 
+\patchcmd{\mkbibindexname}{\ifdefvoid{#3}{}{\MakeCapital{#3} }}{\ifdefvoid{#3}{}{#3 }}{}{\AtEndDocument{\typeout{mkbibindexname could not be patched.}}}
 
 %INTRO
 \newcommand{\agr}{\textsc{agree}}
