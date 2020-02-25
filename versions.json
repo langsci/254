@@ -1,11 +1,1 @@
-{ "versions": 
-    [{  "versiontype": "proofreading", 
-        "title": "Agree to Agree: Agreement in the Minimalist Programme",
-        "authors": [
-            {"name": "Peter W. Smith"},
-            {"name":" Johannes Mursell"},
-            {"name":" Katharina Hartmann"}
-        ],
-        "publishedAt": "2019-08-01T10:54:04.000Z"}
-    ]
-}
+{"versions": [{"authors": [{"name": "Peter W. Smith"}, {"name": " Johannes Mursell"}, {"name": " Katharina Hartmann"}], "title": "Agree to Agree: Agreement in the Minimalist Programme", "publishedAt": "2019-08-01T10:54:04.000Z", "versiontype": "proofreading"}, {"title": "Agree to Agree: Agreement in the Minimalist Programme", "versiontype": "first_edition", "publishedAt": "2020-02-25T11:08:50.647452", "authors": [{"name": "Peter W. Smith"}, {"name": " Johannes Mursell"}, {"name": " Katharina Hartmann"}]}]}
